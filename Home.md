@@ -4,18 +4,18 @@
 ![image](https://user-images.githubusercontent.com/117330523/221107297-6b9ca693-f00b-4153-aa30-9825d570cf3b.png)
 	
 
-一、产品简介
+##  一、产品简介
 
   XEMA系列相机是基于DLP投影的结构光3D相机。核心部件采用TI DLP3010投影芯片，Sony IMX174成像芯片和Nvidia Jetson Nano运算模块。数据传输使用GigE接口，支持多种曝光模式。适用于3D扫描、工业3D缺陷检测，可配合工业机器人使用在工业无序抓取、上下料等使用场景。
 
-二、产品展示
+##  二、产品展示
 
 ![image](https://user-images.githubusercontent.com/117330523/221108634-7b2fc049-e4ee-4021-8157-1944ae464573.png)
 
 ![image](https://user-images.githubusercontent.com/117330523/221108658-a4abc334-195b-432e-bc82-19660c50cd04.png)
 
 
-三、性能描述
+## 三、性能描述
 
 参数 | 值
 -- | --
@@ -34,14 +34,14 @@ CPU | Quad-core Arm A57 processor @ 1.43 GHz
 GPU | 128-core Maxwell GPU
 内存 | 4GB 64-bit LPDDR4
 
-四、产品安装说明
+## 四、产品安装说明
 
-1. 产品配件
+### 1. 产品配件
 
 ![image](https://user-images.githubusercontent.com/117330523/221108940-0a39d0da-d209-4bf4-9555-6c094c6bf0a1.png)
 
 
-2. 硬件连接
+### 2. 硬件连接
 
 电脑通过网络访问相机有两种连接方式，一种是通过路由器连接进行交互，一种是通过网线直接连接进行通信。
 
@@ -58,7 +58,7 @@ GPU | 128-core Maxwell GPU
 
 相机上电前，首先确认电源线与网线连接牢靠，接通电源后“Power”指示灯常亮，约30秒钟相机启动完成，此时相机的网口绿色指示灯常亮、橙色指示灯闪烁，表明网络带宽为千兆。相机的“Act”工作指示灯在拍照及数据传输时点亮，平时为熄灭状态。
 
-3. 软件界面
+### 3. 软件界面
 
 1)ConfiguringIP界面介绍
 打开configuring_network_gui.exe，点击搜索相机，显示界面如下图所示：
@@ -81,9 +81,9 @@ GPU | 128-core Maxwell GPU
 点击红色框内的拍照图标，相机拍摄并在右侧显示所拍图像，可以选择显示框右上方的亮度图/深度图/高度图分别查看。为得到最佳有效的图像数据，投影亮度和曝光时间可在左侧的设置栏修改。点击拍照右侧的保存按钮，可以将拍摄的亮度图、点云图等保存至电脑，也可以勾选自动保存，拍摄后自动存储图片。
 除以上设置，界面还提供了增益、置信度、平滑、重复拍摄次数等参数供配置使用。
 
-五、使用说明
+## 五、使用说明
 
-1、高动态（HDR）
+### 1、高动态（HDR）
 （可设置曝光数量）
 
 ![image](https://user-images.githubusercontent.com/117330523/221115500-54bb8ce3-690d-452a-bfb4-089df6966d5d.png)
@@ -123,7 +123,7 @@ GPU | 128-core Maxwell GPU
 ![image](https://user-images.githubusercontent.com/117330523/221111252-e68c3313-d7e2-4b52-828b-17f1129bef54.png)
 
 
-2、相机曝光时间
+### 2、相机曝光时间
 
 ![image](https://user-images.githubusercontent.com/117330523/221111293-ae85bbfd-2588-476c-893e-2f5be2a29d4e.png)
 
@@ -137,7 +137,7 @@ GPU | 128-core Maxwell GPU
 ![image](https://user-images.githubusercontent.com/117330523/221111354-371b73e7-2b2f-4b73-a48c-b06d6b189ad5.png)
 
 
-3、投影亮度
+### 3、投影亮度
 
 ![image](https://user-images.githubusercontent.com/117330523/221111387-d675c896-8c9d-4390-8998-2986a7a92f02.png)
 
@@ -152,7 +152,7 @@ GPU | 128-core Maxwell GPU
 ![image](https://user-images.githubusercontent.com/117330523/221111653-2bdda4e1-88c7-43f2-aec0-b618a3e874db.png)
 
 
-4、过曝显示
+### 4、过曝显示
 
 在进行拍摄时，难免会出现过曝的现象，在亮度图中，勾选过曝按钮就可观察过曝的区域，这样就可以改变相关的参数，如曝光时间、亮度、HDR模式等操作进行矫正。
 
@@ -160,7 +160,7 @@ GPU | 128-core Maxwell GPU
 
 ![image](https://user-images.githubusercontent.com/117330523/221111866-0ed8a324-1ec9-4451-bd45-688d976bbb20.png)
 
-5、置信度
+### 5、置信度
 
 ![image](https://user-images.githubusercontent.com/117330523/221111992-cfeb83e0-b40f-47be-97c6-9aedf895f803.png)
 
@@ -175,7 +175,7 @@ GPU | 128-core Maxwell GPU
 ![image](https://user-images.githubusercontent.com/117330523/221112100-0fc87765-55f5-4a84-86f7-0da815ad85a4.png)
 
 
-6、噪点过滤
+### 6、噪点过滤
 
 ![image](https://user-images.githubusercontent.com/117330523/221112133-0afb299d-84ca-490c-8977-3bea51c17824.png)
 
@@ -189,7 +189,7 @@ GPU | 128-core Maxwell GPU
 
 
 
-7、生成亮度图
+### 7、生成亮度图
 
 生成亮度图在界面最底端。
 
@@ -203,7 +203,7 @@ GPU | 128-core Maxwell GPU
 ![image](https://user-images.githubusercontent.com/117330523/221112298-2375dfa3-f85d-49ce-abd6-d80778ef3599.png)
 
  
-8、基准平面参数
+### 8、基准平面参数
 
 高度映射基准平面：基准平面是在基准零位的一个平面,以拍摄的物体（如标定板）作为基准零位。若已知标定板的X、Y，根据右手定则可判断Z轴方向，标定板为基准平面，标定板正面为Z负方向（靠近相机），标定板反面则为Z正方向（远离相机）。
 
@@ -230,7 +230,7 @@ GPU | 128-core Maxwell GPU
 
 
 
-9、最大高度最小高度
+### 9、最大高度最小高度
 
 ![image](https://user-images.githubusercontent.com/117330523/221112487-0696298e-3207-457c-bdb8-8498f47f3ff7.png)
 
@@ -246,7 +246,7 @@ GPU | 128-core Maxwell GPU
 ![image](https://user-images.githubusercontent.com/117330523/221112571-4d0e8f4f-632e-47a5-b990-af3577971942.png)
 
 
-10、增益  
+### 10、增益  
 
 ![image](https://user-images.githubusercontent.com/117330523/221112598-a1046e8c-1c36-4833-a921-393d523a9100.png)
 
@@ -255,7 +255,7 @@ GPU | 128-core Maxwell GPU
 
 增益：调节画面的亮暗，不建议设置。
 
-11、半径滤波
+### 11、半径滤波
 
 ![image](https://user-images.githubusercontent.com/117330523/221112626-2c944e13-15ae-4d17-9f57-23ff9f7c92ef.png)
 
@@ -269,7 +269,7 @@ GPU | 128-core Maxwell GPU
 
 对于点云中的每一个点，确定一个半径为r的球体，选取有效点数，若内部点数小于有效点时，则认为是噪声点，应剔除。
 
-12、标定板型号
+### 12、标定板型号
 
 型号选择：4mm/12mm/20mm/40mm/80mm
 
@@ -278,12 +278,12 @@ GPU | 128-core Maxwell GPU
 ![image](https://user-images.githubusercontent.com/117330523/221112727-3c62f155-847e-4ed2-a2c6-6a8d08d7df18.png)
 
 
-13、相机IP地址：***.***.***.***
+### 13、相机IP地址：***.***.***.***
 
 ![image](https://user-images.githubusercontent.com/117330523/221112769-6535109f-1f55-4f7f-a79d-44803157214a.png)
 
 
-14、重复数
+### 14、重复数
 
 ![image](https://user-images.githubusercontent.com/117330523/221112816-0254b815-488f-4c6e-9a7a-4ad12d0c4872.png)
 
@@ -294,7 +294,7 @@ GPU | 128-core Maxwell GPU
 
 
 
-15、图标
+### 15、图标
 
  
 ![image](https://user-images.githubusercontent.com/117330523/221116979-de9bdd42-f464-466a-9e52-907b32b619b4.png)
@@ -302,13 +302,13 @@ GPU | 128-core Maxwell GPU
 ![image](https://user-images.githubusercontent.com/117330523/221117096-beb13d9b-0968-4fab-9fe1-8314288336f4.png)
 
 
-六、典型实例介绍：
+## 六、典型实例介绍：
 
 本节以普通物体、黑色物体、金属镜面反光工件的顺序着手，由浅入深的讲解如何拍出一副清晰完整的点云图片。但参数不是绝对的，可视工作环境进行微调。
 
 注：本节的点云图片都是在CloudCompare中查看的。
 
-1、普通物体
+### 1、普通物体
 
 在拍摄普通物体时，在不过曝的情况下，我们要尽量增加投影亮度和曝光时间，此时的拍摄效果将会达到最佳。
 
@@ -324,7 +324,7 @@ GPU | 128-core Maxwell GPU
 
 ![image](https://user-images.githubusercontent.com/117330523/221113262-6894956e-22da-4493-817e-1105e419c2d1.png)
 
-2、黑色物体
+### 2、黑色物体
 
 拍摄黑色物体，如一块纯黑色的海绵。
 
@@ -347,7 +347,7 @@ GPU | 128-core Maxwell GPU
 
 
 
-3、金属镜面反光工件（高动态）
+### 3、金属镜面反光工件（高动态）
 
 ![image](https://user-images.githubusercontent.com/117330523/221113466-a69c243c-7622-4004-bf29-b5db24467e44.png)
 
