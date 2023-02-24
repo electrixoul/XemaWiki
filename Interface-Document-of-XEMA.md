@@ -1,6 +1,6 @@
-Interface Document of XEMA 
+# Interface Document of XEMA 
 
-Version Record
+## Version Record
 
 Time | Version | Author | Description
 -- | -- | -- | --
@@ -13,7 +13,7 @@ Time | Version | Author | Description
 2022.11.21 | V1.0.7 | Guanjin Zhang | Complete 35 basic functions（Modified 2 functions）
 2023.01.29 | V1.1.0 | Guanjin Zhang | Complete 37 basic functions
 
-interface description
+## interface description
 
 Interfaces (1-33) are in the header file of open_cam3d_sdk.h.
 
@@ -21,7 +21,7 @@ Interfaces (34,35) are in the header file of enumerate.h.
 
 Error Codes are defined in camera_status.h.
 
-1. Connect
+## 1. Connect
 
 int DfConnect(const char* camera_id);
 
@@ -35,7 +35,7 @@ int DfConnect(const char* camera_id);
 
         // Return value:  Type(int): 0 means the connection failed; 1 means the connection success
 
-2. Disconnect
+## 2. Disconnect
 
 int DfDisconnect(const char* camera_id);
 
@@ -49,7 +49,7 @@ int DfDisconnect(const char* camera_id);
 
         // Return value:  Type(int): 0 means the disconnection success; -1 means the connection failed.
 
-3. Get camera resolution
+## 3. Get camera resolution
 
 int DfGetCameraResolution(int* width, int* height);
 
@@ -63,7 +63,7 @@ int DfGetCameraResolution(int* width, int* height);
 
         // Return value:  Type(int): 0 means the parameter acquisition success; -1 means the parameter acquisition failed.
 
-4. Capture camera data
+## 4. Capture camera data
 
 int DfCaptureData(int exposure_num, char* &timestamp);
 
@@ -77,7 +77,7 @@ int DfCaptureData(int exposure_num, char* &timestamp);
 
         // Return value:  Type(int): 0 means the point cloud acquisition success; -1 means the point cloud acquisition failed.
 
-5. Get Depth Data
+## 5. Get Depth Data
 
 int DfGetDepthData(unsigned short* depth);
 
@@ -95,7 +95,7 @@ The parameter is the data pointer corresponding to the image and the caller need
 
 The data will be arranged in the order of H (row)/W (column)/C (channel) in the memory.
 
-6. Get HeightMap Data
+## 6. Get HeightMap Data
 
          // Name of function:  DfGetHeightMapData
 
@@ -111,7 +111,7 @@ The parameter is the data pointer corresponding to the image and the caller need
 
 The data will be arranged in the order of H (row)/W (column)/C (channel) in the memory.
 
-7. Get Brightness Data
+## 7. Get Brightness Data
 
 int DfGetBrightnessData(unsigned short* depth);
 
@@ -129,7 +129,7 @@ The parameter is the data pointer corresponding to the image and the caller need
 
 The data will be arranged in the order of H (row)/W (column)/C (channel) in the memory.
 
-8. Get Standard Plane Param
+## 8. Get Standard Plane Param
 
 int DfGetStandardPlaneParam(float* R,float* T);
 
@@ -143,7 +143,7 @@ int DfGetStandardPlaneParam(float* R,float* T);
 
         // Return value:  type (int):  0 means the data acquisition success; -1 means the data acquisition failed.
 
-9. Get Height Map Data Base Param
+## 9. Get Height Map Data Base Param
 
 int DfGetHeightMapDataBaseParam(float* R, float* T, float* height_map);
 
@@ -157,7 +157,7 @@ int DfGetHeightMapDataBaseParam(float* R, float* T, float* height_map);
 
         // Return value:  type (int):  0 means the data acquisition success; -1 means the data acquisition failed.
 
-10. Get Pointcloud Data
+## 10. Get Pointcloud Data
 
 int DfGetPointcloudData(float* point_cloud);	
 
@@ -175,7 +175,7 @@ The parameter is the data pointer corresponding to the image and the caller need
 
 The data will be arranged in the order of H (row)/W (column)/C (channel) in the memory.
 
-11. Get Calibration Parameters
+## 11. Get Calibration Parameters
 
 int DfGetCalibrationParam(struct CalibrationParam* calibration_param);
  
@@ -189,7 +189,7 @@ int DfGetCalibrationParam(struct CalibrationParam* calibration_param);
 
         // Return value:  type (int):  0 means the calibration parameters acquisition success; -1 means the data acquisition failed.
 
-12. Set Led Current Parameters
+## 12. Set Led Current Parameters
 
 int DfSetParamLedCurrent(int led);
 
@@ -203,7 +203,7 @@ int DfSetParamLedCurrent(int led);
 
         // Return value:  type (int):  0 means the parameter setting success; -1 means the parameter setting failed.
 
-13. Get Led Current Parameters
+## 13. Get Led Current Parameters
 
 int DfGetParamLedCurrent(int led);
 
@@ -217,7 +217,7 @@ int DfGetParamLedCurrent(int led);
 
         // Return value:  type (int):  0 means the parameter acquisition success; -1 means the parameter acquisition failed.
 
-14. Set Hdr Parameters
+## 14. Set Hdr Parameters
 
 int DfSetParamHdr(int num, int exposure_param[6], int led_param[6]);
 
@@ -231,7 +231,7 @@ int DfSetParamHdr(int num, int exposure_param[6], int led_param[6]);
 
         // Return value:  type (int):  0 means the exposure parameters setting success; -1 means the exposure parameters setting failed.
 
-15. Get Hdr Parameters
+## 15. Get Hdr Parameters
 
 int DfGetParamHdr(int& num, int exposure_param[6], int led_param[6]);
 
@@ -245,7 +245,7 @@ int DfGetParamHdr(int& num, int exposure_param[6], int led_param[6]);
 
         // Return value:  type (int):  0 means the exposure parameters acquisition success; -1 means the exposure parameters acquisition failed.
 
-16. Set Standard Plane Parameters
+## 16. Set Standard Plane Parameters
 
 int DfSetParamStandardPlaneExternal(float* R, float* T);
 
@@ -259,7 +259,7 @@ int DfSetParamStandardPlaneExternal(float* R, float* T);
 
         // Return value:  type (int):  0 means the parameters setting success; -1 means the parameters setting failed.
 
-17. Get Standard Plane Parameters
+## 17. Get Standard Plane Parameters
 
 int DfGetParamStandardPlaneExternal(float* R, float* T);
 
@@ -273,7 +273,7 @@ int DfGetParamStandardPlaneExternal(float* R, float* T);
 
 	// Return value:  type (int):  0 means the parameters acquisition success; -1 means the parameters acquisition failed.
 
-18. Set Camera Exposure Parameters
+## 18. Set Camera Exposure Parameters
 
 int DfSetParamCameraExposure(float exposure);
 
@@ -287,7 +287,7 @@ int DfSetParamCameraExposure(float exposure);
 
 	// Return value:  type (int):  0 means the exposure parameters setting success; -1 means the exposure parameters setting failed.
 
-19. Get Camera Exposure Parameters
+## 19. Get Camera Exposure Parameters
 
 int DfGetParamCameraExposure(float& exposure);
 
@@ -302,7 +302,7 @@ int DfGetParamCameraExposure(float& exposure);
 
 	// Return value:  type (int):  0 means the exposure parameters acquisition success; -1 means the exposure parameters acquisition failed.
 
-20. Get Mixed Hdr Parameters
+## 20. Get Mixed Hdr Parameters
 
 int DfGetParamMixedHdr(int& num, int exposure_param[6], int led_param[6]);
 
@@ -317,7 +317,7 @@ int DfGetParamMixedHdr(int& num, int exposure_param[6], int led_param[6]);
 	
         // Return value:  type (int):  0 means the exposure parameters acquisition success; -1 means the exposure parameters acquisition failed.
 
-21. Set Camera Confidence Parameters
+## 21. Set Camera Confidence Parameters
 
 int DfSetParamCameraConfidence(float confidence);
 
@@ -332,7 +332,7 @@ int DfSetParamCameraConfidence(float confidence);
 
         // Return value:  type (int):  0 means the confidence parameters setting success; -1 means the confidence parameters setting failed.
 
-22. Set Mixed Hdr Parameters
+## 22. Set Mixed Hdr Parameters
 
 int DfSetParamMixedHdr(int num, int exposure_param[6], int led_param[6]);
 
@@ -346,7 +346,7 @@ int DfSetParamMixedHdr(int num, int exposure_param[6], int led_param[6]);
 
         // Return value:  type (int):  0 means the exposure parameters setting success; -1 means the exposure parameters setting failed.
 
-23. Get Camera Confidence Parameters
+## 23. Get Camera Confidence Parameters
 
 int DfGetParamCameraConfidence(float& confidence);
 
@@ -360,7 +360,7 @@ int DfGetParamCameraConfidence(float& confidence);
 
         // Return value:  type (int):  0 means the confidence parameters acquisition success; -1 means the exposure parameters acquisition failed.
 
-24. Set Camera Gain Parameters
+## 24. Set Camera Gain Parameters
 
 int DfSetParamCameraGain(float gain); 
 
@@ -374,7 +374,7 @@ int DfSetParamCameraGain(float gain);
 
         // Return value:  type (int):  0 means the gain parameters setting success; -1 means the gain parameters setting failed.
 
-25. Get Camera Gain Parameters
+## 25. Get Camera Gain Parameters
 
 int DfGetParamCameraGain(float& gain);
 
@@ -388,7 +388,7 @@ int DfGetParamCameraGain(float& gain);
 
         // Return value:  type (int):  0 means the gain parameters acquisition success; -1 means the gain parameters acquisition failed.
 
-26. Set Pointcloud Smoothing Parameters
+## 26. Set Pointcloud Smoothing Parameters
 
 int DfSetParamSmoothing(int smoothing);
 
@@ -402,7 +402,7 @@ int DfSetParamSmoothing(int smoothing);
 
         // Return value:  type (int):  0 means the pointcloud Smoothing parameters setting success; -1 means the pointcloud Smoothing parameters setting failed.
 
-27. Get Pointcloud Smoothing Parameters
+## 27. Get Pointcloud Smoothing Parameters
 
 int DfGetParamSmoothing(int& smoothing);
 
@@ -415,7 +415,7 @@ int DfGetParamSmoothing(int& smoothing);
 
         // Return value:  type (int):  0 means the pointcloud Smoothing parameters acquisition success; -1 means the pointcloud Smoothing parameters acquisition failed.
 
-28. Set Radius Filter Parameters
+## 28. Set Radius Filter Parameters
 
 int DfSetParamRadiusFilter(int use,float radius,int num);
 
@@ -429,7 +429,7 @@ int DfSetParamRadiusFilter(int use,float radius,int num);
 
         // Return value:  type (int):  0 means the radius filter parameters setting success; -1 means the radius filter parameters setting failed.
 
-29. Get Radius Filter Parameters
+## 29. Get Radius Filter Parameters
 
 int DfGetParamRadiusFilter(int& use, float& radius, int& num);
 
@@ -443,7 +443,7 @@ int DfGetParamRadiusFilter(int& use, float& radius, int& num);
 
         // Return value:  type (int):  0 means the radius filter parameters acquisition success; -1 means the radius filter parameters acquisition failed.
 
-30. Set Outlier Filter Parameters
+## 30. Set Outlier Filter Parameters
 
 int DfSetParamOutlierFilter(float threshold);
 
@@ -457,7 +457,7 @@ int DfSetParamOutlierFilter(float threshold);
 
         // Return value:  type (int):  0 means the outlier filter parameters setting success; -1 means the outlier filter parameters setting failed.
 
-31. Get Outlier Filter Parameters
+## 31. Get Outlier Filter Parameters
 
 int DfGetParamOutlierFilter(float& threshold);	
 
@@ -471,7 +471,7 @@ int DfGetParamOutlierFilter(float& threshold);
 
         // Return value:  type (int):  0 means the outlier filter parameters acquisition success; -1 means the outlier filter parameters acquisition failed.
 
-32. Set Multiple Exposure Model Parameters
+## 32. Set Multiple Exposure Model Parameters
 
 int DfSetParamMultipleExposureModel(int model);
 
@@ -485,7 +485,7 @@ int DfSetParamMultipleExposureModel(int model);
 
         // Return value:  type (int):  0 means the multiple exposure mode setting success; else means the multiple exposure mode setting failed;
 
-33. Set Repetition Exposure Num Parameters
+## 33. Set Repetition Exposure Num Parameters
 
 int DfSetParamRepetitionExposureNum(int num);
 
@@ -499,7 +499,7 @@ int DfSetParamRepetitionExposureNum(int num);
 
         // Return value: type (int):  0 means the parameter setting success; else means the parameter setting failed.
 
-34. Update Device List
+## 34. Update Device List
 
 int DfUpdateDeviceList(int& device_num);
 	
@@ -513,7 +513,7 @@ int DfUpdateDeviceList(int& device_num);
 
         // Return value:  type (int):  0 means the connection success; else means the parameter connection failed.
 
-35. Get All Device Base Info
+## 35. Get All Device Base Info
 
 int DfGetAllDeviceBaseInfo(DeviceBaseInfo* pDeviceInfo, int* pBufferSize);
 
@@ -527,7 +527,7 @@ int DfGetAllDeviceBaseInfo(DeviceBaseInfo* pDeviceInfo, int* pBufferSize);
 
         // Return value:  type (int):  0 means the information acquisition success; else means the information acquisition failed.
 
-36. Set Depth Filter Parameters
+## 36. Set Depth Filter Parameters
 
 int DfSetParamDepthFilter(int use, float depth_filter_threshold);
 
@@ -541,7 +541,7 @@ int DfSetParamDepthFilter(int use, float depth_filter_threshold);
 
         // Return value:  type (int):  0 means the parameter setting success; else means the parameter setting failed.
 
-37. Get Depth Filter Parameters
+## 37. Get Depth Filter Parameters
 
 int DfGetParamDepthFilter(int& use, float& depth_filter_threshold);
 
@@ -555,7 +555,7 @@ int DfGetParamDepthFilter(int& use, float& depth_filter_threshold);
 
         // Return value: type (int):  0 means the parameter set success; else means the parameter set failed.
 
- Routine
+ ## Routine
 
 Please see the example.cpp
 
@@ -590,7 +590,7 @@ struct DeviceBaseInfo
 
 };
 
-Error Code
+## Error Code
 
 Error Code | Value | Description
 -- | -- | --
