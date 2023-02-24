@@ -141,6 +141,8 @@ GPU | 128-core Maxwell GPU
 1、高动态（HDR）
 （可设置曝光数量）
 
+![image](https://user-images.githubusercontent.com/117330523/221115500-54bb8ce3-690d-452a-bfb4-089df6966d5d.png)
+
 高动态范围成像（英语：High Dynamic Range Imaging，[简称](https://baike.baidu.com/item/%E7%AE%80%E7%A7%B0/10492947?fromModule=lemma_inlink)HDRI或HDR），用来实现比普通数位图像技术更大曝光[动态范围](https://baike.baidu.com/item/%E5%8A%A8%E6%80%81%E8%8C%83%E5%9B%B4/6327032?fromModule=lemma_inlink)（即更大的明暗差别）的一组技术。
 
 效果：高动态会使图片层次更分明，明暗差别明显。
@@ -266,7 +268,7 @@ GPU | 128-core Maxwell GPU
 基准平面参数是数据测得，不可修改。
 如：
 
-![image](https://user-images.githubusercontent.com/117330523/221112364-8975412f-a3ae-4bc5-b635-54a389fa6713.png)
+![image](https://user-images.githubusercontent.com/117330523/221116271-22d8ab52-2a8c-4c2f-b078-194419fee0af.png)
 
 ![image](https://user-images.githubusercontent.com/117330523/221112399-cd821277-a0f6-4a9e-ad0b-2a2871914969.png)
 
@@ -349,17 +351,11 @@ GPU | 128-core Maxwell GPU
 
 15、图标
 
-  | GUI图标
--- | --
-  | 连续拍摄开始图标
-  | 连续拍摄停止图标
-  | 连接相机
-  | 保存按钮
-  | 打开文件夹
-  | 获得相机标定参数（内参、外参、畸变、基准平面参数）
-  | 连接相机图标
-  | 单次拍摄图标
-  | 获得相机精度图标
+ 
+![image](https://user-images.githubusercontent.com/117330523/221116979-de9bdd42-f464-466a-9e52-907b32b619b4.png)
+
+![image](https://user-images.githubusercontent.com/117330523/221117096-beb13d9b-0968-4fab-9fe1-8314288336f4.png)
+
 
 六、典型实例介绍：
 
