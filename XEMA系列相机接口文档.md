@@ -588,7 +588,7 @@ struct DeviceBaseInfo
 };
 
 
-错误码
+## 错误码
 
 错误码 | 码值 | 描述
 -- | -- | --
