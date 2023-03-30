@@ -45,10 +45,10 @@ GPU | 128-core Maxwell GPU
 
 电脑通过网络访问相机有两种连接方式，一种是通过路由器连接进行交互，一种是通过网线直接连接进行通信。
 
-![image](https://user-images.githubusercontent.com/117330523/221109043-66d15dd9-9799-4b93-afba-92b1081ad53c.png)
+![new1](https://user-images.githubusercontent.com/117330523/228769660-b823103c-1f9c-42e4-ae83-5b3a6cc42021.png)
 
 
-![image](https://user-images.githubusercontent.com/117330523/221109081-28d42238-8ec1-4cfd-bdcb-f699978633c0.png)
+![new2](https://user-images.githubusercontent.com/117330523/228769704-e63d2641-81a5-486f-a642-ebb5ef75189e.png)
 
 
 当网络中不存在DHCP服务器时（即相机与电脑直连），相机的DHCP机制尝试30秒仍没有获取到IP，即转为AVAHI机制协商IP，协商出的IP在169.254.x.x网段，可通过SDK软件包中的configuring_network_gui.exe查看IP地址，具体说明将在下一节介绍。
