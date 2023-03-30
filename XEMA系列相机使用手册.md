@@ -38,7 +38,7 @@ GPU | 128-core Maxwell GPU
 
 ### 1. 产品配件
 
-![image](https://user-images.githubusercontent.com/117330523/221108940-0a39d0da-d209-4bf4-9555-6c094c6bf0a1.png)
+![屏幕截图 2023-03-30 114801](https://user-images.githubusercontent.com/117330523/228760712-1856d8fc-375a-4a92-80ef-863a56863288.png)
 
 
 ### 2. 硬件连接
