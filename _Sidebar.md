@@ -1,1 +1,1 @@
-sidebar
+Everything you want to know is here.
