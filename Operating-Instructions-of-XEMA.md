@@ -1,6 +1,6 @@
 # Operating Instructions of XEMA
 
-## V1.0.7
+## V1.1.1
 
 ![image](https://user-images.githubusercontent.com/117330523/221140452-a1a5e148-6b1c-4c02-b2d3-cc6141b29562.png)
 
@@ -37,16 +37,15 @@ Memory | 4GB 64-bit LPDDR4
 
 ### 4.1 Product Accessories
 
-![image](https://user-images.githubusercontent.com/117330523/221141023-5b02b37e-f8e5-400f-b036-f2ee3e4bbdc7.png)
+![屏幕截图 2023-03-30 114801](https://user-images.githubusercontent.com/117330523/229755580-a2fc4e3e-e400-4bd2-aa75-bb9cb98481c2.png)
 
 ### 4.2 Hardware connection
 
 There are two ways for computers to access the camera through the network, one is through the router connection to interact, and the other is through the network cable direct connection to communicate. 
 
-![image](https://user-images.githubusercontent.com/117330523/221141063-aa724866-da4f-4f88-8a64-f0096515c541.png)
+![new1](https://user-images.githubusercontent.com/117330523/229757341-c9ce1958-2804-4d73-9651-6126d0b9c83f.png)
 
-![image](https://user-images.githubusercontent.com/117330523/221141114-b55f4755-45f8-4666-97d5-f1432044a843.png)
-
+![new2](https://user-images.githubusercontent.com/117330523/229757411-41aa9047-37bc-4010-88eb-a00947522d3f.png)
 
 First, we should confirm that the power cord and the network cable are firmly connected before the camera is powered on. Then after the Power is turned on, the "Power" indicator is always on, and the camera starts up for about 30 seconds, at this time, the green indicator of the network port of the camera is always on, and the orange indicator is flashing, indicating that the network bandwidth is gigabit. The camera's "Act" indicator lights up during photography and data transmission, and is usually off.
 
@@ -56,14 +55,14 @@ First, we should confirm that the power cord and the network cable are firmly co
 
 First, Open configuring_network_gui.exe and then click Search Camera, the display interface is as shown in he figure below.
 
-![image](https://user-images.githubusercontent.com/117330523/221141657-1ff249e9-12f0-46df-ad2a-4e6b593d527a.png)
+![image](https://user-images.githubusercontent.com/117330523/229755990-0a90f865-a93f-4d65-997e-883d1f62169f.png)
 
  The searched cameras will be displayed in a list. The left column is the MAC address of the camera, and the right column is the camera IP. When the camera is directly connected to the computer, the negotiated IP address searched after booting is similar to the figure below.the figure below. 
 
-![image](https://user-images.githubusercontent.com/117330523/221141701-386fa9d9-ee93-4567-baab-8ec2377fb5c5.png)
+![image](https://user-images.githubusercontent.com/117330523/229756068-48e26336-e3b1-4858-a374-c5d88634c0bf.png)
 
 
-4.3.2 OpenCam3D interface introduction
+4.3.2 XEMA interface introduction
 
 ![image](https://user-images.githubusercontent.com/117330523/221141854-164e9bd6-381a-4da5-8e8d-adbfba897b0e.png)
 
@@ -245,7 +244,13 @@ Range: 0-10
 
 It is the number of times the camera needs to repeat shooting. It can increase the signal-to-noise ratio (the ratio of signal to noise). The effect is better if the signal-to-noise ratio is higher, so that random noise will be suppressed and effective information will be increased.
 
-### 5.16 Icon
+### 5.16 save
+
+![image](https://user-images.githubusercontent.com/117330523/229756864-4b124d08-2bc5-4294-9221-4df53a51e7ae.png)
+
+Click save button, can choose the original image or distortion to save, also can choose no longer prompt.
+
+### 5.17 Icon
 
 ![image](https://user-images.githubusercontent.com/117330523/221144294-3269ac53-8ca0-4a06-8af7-8f7e7306e102.png)
 
