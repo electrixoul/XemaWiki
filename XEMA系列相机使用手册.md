@@ -1,5 +1,5 @@
 # XEMA系列相机使用手册
-## V1.0.6
+## V1.1.1
 
 ![image](https://user-images.githubusercontent.com/117330523/221107297-6b9ca693-f00b-4153-aa30-9825d570cf3b.png)
 	
@@ -63,11 +63,11 @@ GPU | 128-core Maxwell GPU
 1)ConfiguringIP界面介绍
 打开configuring_network_gui.exe，点击搜索相机，显示界面如下图所示：
 
-![image](https://user-images.githubusercontent.com/117330523/221109220-b0980fff-24a2-4e44-a0a0-2f394c9690a4.png)
+![image](https://user-images.githubusercontent.com/117330523/229753038-e7fe90a3-325b-48ad-8aea-c2576949f7e9.png)
 
 搜索到的相机会列表显示，左列为该相机的MAC地址，右列即为相机IP，前面讲到的相机与电脑直连时，开机后搜索到的协商IP地址类似下图。
 
-![image](https://user-images.githubusercontent.com/117330523/221109308-6dad0546-845a-48b9-9cd7-c8d1afbc86ce.png)
+![image](https://user-images.githubusercontent.com/117330523/229753101-f130fd99-bcbf-4864-a694-81bd81c499cc.png)
 
 
 2)OpenCam3D界面介绍
@@ -269,7 +269,13 @@ GPU | 128-core Maxwell GPU
 
 对于点云中的每一个点，确定一个半径为r的球体，选取有效点数，若内部点数小于有效点时，则认为是噪声点，应剔除。
 
-### 12、标定板型号
+### 12、深度滤波
+
+![image](https://user-images.githubusercontent.com/117330523/229754159-95ec2ef3-9a01-4c14-877f-ca811c16a86f.png)
+
+基于深度图的滤波方法，勾选为真作用否则禁用，在1000mm的距离下建议阈值为33。
+
+### 13、标定板型号
 
 型号选择：4mm/12mm/20mm/40mm/80mm
 
@@ -278,12 +284,12 @@ GPU | 128-core Maxwell GPU
 ![image](https://user-images.githubusercontent.com/117330523/221112727-3c62f155-847e-4ed2-a2c6-6a8d08d7df18.png)
 
 
-### 13、相机IP地址：***.***.***.***
+### 14、相机IP地址：***.***.***.***
 
 ![image](https://user-images.githubusercontent.com/117330523/221112769-6535109f-1f55-4f7f-a79d-44803157214a.png)
 
 
-### 14、重复数
+### 15、重复数
 
 ![image](https://user-images.githubusercontent.com/117330523/221112816-0254b815-488f-4c6e-9a7a-4ad12d0c4872.png)
 
@@ -291,10 +297,14 @@ GPU | 128-core Maxwell GPU
 
 相机要重复拍摄的次数，作用是提高信噪比（信号与噪声的比例），信噪比越高越好，这样随机噪声将会被抑制，增加了有效信息。
 
+### 16、保存
+
+![image](https://user-images.githubusercontent.com/117330523/229754503-74f46496-6fec-4efa-b3b8-38c0e68e974c.png)
+
+点击保存按钮，可选择原图或去畸变进行保存，也可选择不再提示。
 
 
-
-### 15、图标
+### 17、图标
 
  
 ![image](https://user-images.githubusercontent.com/117330523/221116979-de9bdd42-f464-466a-9e52-907b32b619b4.png)
