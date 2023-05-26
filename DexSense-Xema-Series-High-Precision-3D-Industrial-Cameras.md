@@ -25,9 +25,13 @@ Technical parameters | Near field of view（mm） | 640×450 | 390×220 | 111×4
   | Distal field of view（mm） | 1950×1090 | 770×430 | 159×72
   | Recommended working distance（mm） | 1000-2500 | 500-1000 | 100-150
   | measurement accuracy | 0.5mm@2.5m | 0.05mm@0.8m | 6um@130mm
+  || XY accuracy | 0.5mm @1m<br>0.8mm @2m<br>1mm @2.5m| 0.2mm @0.5m<br>0.4mm @1m| 30um @130mm
   | Typical acquisition time | 0.5-1s | 0.5-1s | 0.5-1s
   | Output data | Point Cloud、Depth map、Grey-scale map|Point Cloud、Depth map、Grey-scale map|Point Cloud、Depth map、Grey-scale map
-Hardware parameters | Boundary dimension（mm） | 433×133×51 | 207×127.5×50.5 | 126×146×61
+  ||Operating system|Microsoft、Linux|Microsoft、Linux|Microsoft、Linux
+  ||SDK|C/C++|C/C++|C/C++
+Hardware parameters |视场角（H/V）|38°/23°|43°/23°|37°/25°
+|| Boundary dimension（mm） | 433×133×51 | 207×127.5×50.5 | 126×146×61
   | Weight（kg） | 2.1 | 1.2 | 1.1
   | Baseline（mm） | 350 | 145 | 70
   | Aspect ratio | 1920×1200 |1920×1200| 2448×2048
