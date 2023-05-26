@@ -1,8 +1,7 @@
 # DexSense Xema北极鸥系列 高精度3D工业智能相机
 
 ![相机_画板 1](https://user-images.githubusercontent.com/117330523/229683541-c8969d88-0ce7-4fdb-8c52-0d45c751c3e4.png)
-
-![优势_画板 1](https://user-images.githubusercontent.com/117330523/229683563-14e43713-a433-4d6c-8928-a304ab93aaa2.png)
+![优势_画板 1](https://github.com/Open3DV/Xema/assets/117330523/a937383d-cd70-4c5c-8901-898e8852e56a)
 
 
 ## Xema 北极鸥系列高精度3D工业相机
@@ -38,7 +37,7 @@ DexSense Xema 北极鸥系列3D工业智能相机采用先进的DLP结构光方�
 
 ## 点云图
 
-![Caterpillar track map_画板 1](https://user-images.githubusercontent.com/117330523/229683900-2d96c241-2de4-4301-ae6f-626d4befbb13.png) ![Highly reflective work piece_画板 1](https://user-images.githubusercontent.com/117330523/229683913-0abfa026-f91c-4a53-93b8-0920f604fab6.png) ![black bar_画板 1](https://user-images.githubusercontent.com/117330523/229683924-1bdc3566-ea2c-443e-ac2a-a9fea9f38b42.png) ![Small sheet metal workpiece_画板 1](https://user-images.githubusercontent.com/117330523/229683949-7a46b13f-cfc7-483c-88bf-699dff4191e9.png)
+![图片2](https://github.com/Open3DV/Xema/assets/117330523/4c4b9967-8cf7-4405-a215-f717cfa2ed5a)
 
 跨维（深圳）智能数字科技有限公司
 
@@ -56,14 +55,6 @@ DexForce Technology Co., Ltd.
 
 地址：广东省深圳市南山区软件产业基地4B栋05层12号房
 
-![微信公众号_画板 1](https://user-images.githubusercontent.com/117330523/229684495-d6ad66d5-92ba-4eb5-8762-6b8d21b91a9f.png)
+![图片5](https://github.com/Open3DV/Xema/assets/117330523/98d8ec36-95d0-42f2-a9c8-3e154ca8adbd)
 
-微信公众号
-
-![在线客服号_画板 1](https://user-images.githubusercontent.com/117330523/229684516-9cfb27e3-6a56-4831-9bbb-8486b36b2d51.png)
-
-在线客服号
-
-![抖音号_画板 1](https://user-images.githubusercontent.com/117330523/229684539-7ef1234c-d434-4285-9802-da394e51c6e9.png)
-
-抖音号
+微信公众号 在线客服号 抖音号
