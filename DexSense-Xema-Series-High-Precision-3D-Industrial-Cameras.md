@@ -30,14 +30,15 @@ Technical parameters | Near field of view（mm） | 640×450 | 390×220 | 111×4
   | Output data | Point Cloud、Depth map、Grey-scale map|Point Cloud、Depth map、Grey-scale map|Point Cloud、Depth map、Grey-scale map
   ||Operating system|Microsoft、Linux|Microsoft、Linux|Microsoft、Linux
   ||SDK|C/C++|C/C++|C/C++
-Hardware parameters |视场角（H/V）|38°/23°|43°/23°|37°/25°
-|| Boundary dimension（mm） | 433×133×51 | 207×127.5×50.5 | 126×146×61
+Hardware parameters |Field angle（H/V）|38°/23°|43°/23°|37°/25°
+  || Boundary dimension（mm） | 433×133×51 | 207×127.5×50.5 | 126×146×61
   | Weight（kg） | 2.1 | 1.2 | 1.1
   | Baseline（mm） | 350 | 145 | 70
   | Aspect ratio | 1920×1200 |1920×1200| 2448×2048
   |Interface type | GbE(gigabit Ethernet)|GbE(gigabit Ethernet)|GbE(gigabit Ethernet)
   | Computing element | NVIDIA Jetson Nano|NVIDIA Jetson Nano|NVIDIA Jetson Nano
   | Nominal voltage | DC 24V 3.2A|DC 24V 3.2A|DC 24V 3.2A
+  ||Authentication|CE/FCC/RoHS|CE/FCC/RoHS|CE/FCC/RoHS
 
 ## Point Cloud
 
