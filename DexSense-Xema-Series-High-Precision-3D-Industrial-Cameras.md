@@ -15,15 +15,15 @@ other application scenarios
 
 ## Field of vision（mm）
 
-![视野图_画板 1](https://user-images.githubusercontent.com/117330523/229683787-7d1ddd06-34df-4ec1-8873-71aadee92792.png)
+![视野图全系列_画板 1](https://github.com/Open3DV/Xema/assets/117330523/eccfb57a-5e93-47c6-9371-a82f95ea982e)
 
 ## Specification parameters
 
   | Model | Xema L | Xema S | Xema P
 -- | -- | -- | -- | --
-Technical parameters | Near field of view（mm） | 769×432 | 307×173 | 92×53
-  | Distal field of view（mm） | 2307×1298 | 769×432 | 123×76
-  | Recommended working distance（mm） | 1000-3000 | 400-1000 | 100-150
+Technical parameters | Near field of view（mm） | 640×450 | 390×220 | 111×47
+  | Distal field of view（mm） | 1950×1090 | 770×430 | 159×72
+  | Recommended working distance（mm） | 1000-2500 | 500-1000 | 100-150
   | measurement accuracy | 0.5mm@2.5m | 0.05mm@0.8m | 6um@130mm
   | Typical acquisition time | 0.5-1s | 0.5-1s | 0.5-1s
   | Output data | Point Cloud、Depth map、Grey-scale map|Point Cloud、Depth map、Grey-scale map|Point Cloud、Depth map、Grey-scale map
@@ -37,7 +37,7 @@ Hardware parameters | Boundary dimension（mm） | 433×133×51 | 207×127.5×50
 
 ## Point Cloud
 
-![Caterpillar track map_画板 1](https://user-images.githubusercontent.com/117330523/229683900-2d96c241-2de4-4301-ae6f-626d4befbb13.png) ![Highly reflective work piece_画板 1](https://user-images.githubusercontent.com/117330523/229683913-0abfa026-f91c-4a53-93b8-0920f604fab6.png) ![black bar_画板 1](https://user-images.githubusercontent.com/117330523/229683924-1bdc3566-ea2c-443e-ac2a-a9fea9f38b42.png) ![Small sheet metal workpiece_画板 1](https://user-images.githubusercontent.com/117330523/229683949-7a46b13f-cfc7-483c-88bf-699dff4191e9.png)
+![图片6](https://github.com/Open3DV/Xema/assets/117330523/3ac3764d-f318-4172-9e06-49c9a11e5523)
 
 DexForce Technology Co., Ltd.       
 
@@ -54,16 +54,6 @@ Mailbox：contact@dexforce.com
 Location：Room 12, Floor 05, Building 4B, Software Industry Base, Nanshan District, 
 Shenzhen, Guangdong
 
-![微信公众号_画板 1](https://user-images.githubusercontent.com/117330523/229684495-d6ad66d5-92ba-4eb5-8762-6b8d21b91a9f.png)
+![图片10](https://github.com/Open3DV/Xema/assets/117330523/1926796d-b5d0-4097-81bf-a5160984047e)
 
-WeChat Official
- Account
-
-![在线客服号_画板 1](https://user-images.githubusercontent.com/117330523/229684516-9cfb27e3-6a56-4831-9bbb-8486b36b2d51.png)
-
-Online customer 
-service number
-
-![抖音号_画板 1](https://user-images.githubusercontent.com/117330523/229684539-7ef1234c-d434-4285-9802-da394e51c6e9.png)
-
-抖音号
+WeChat Official Account  Online customer service number  抖音号
