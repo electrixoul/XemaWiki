@@ -1,5 +1,5 @@
 # XEMA系列相机使用手册
-## V1.2.1
+## V1.2.0
 
 ![image](https://user-images.githubusercontent.com/117330523/221107297-6b9ca693-f00b-4153-aa30-9825d570cf3b.png)
 	
@@ -315,17 +315,65 @@ GPU | 128-core Maxwell GPU
 
 上图中，可见常规模式的高动态模式下，工件部分深度信息和点云信息依旧缺失。在开启高反模式后，工件信息完整，如下图所示。
 
+![image](https://github.com/Open3DV/Xema/assets/117330523/b64fa7c2-11c5-4381-a5c3-eb9dbe3b5aa8)
 
+![image](https://github.com/Open3DV/Xema/assets/117330523/8c4830d6-c1ad-457e-97cd-7fe4bb4097e3)
 
 ### 18、相位校正
 
+![image](https://github.com/Open3DV/Xema/assets/117330523/12228728-0030-4161-bd84-538d2bb28b18)
+
+相位校正即点云灰度补偿，是一种在三维点云数据中对灰度信息进行校正的方法。 点云灰度补偿的目的是消除这些灰度值差异，并将点云中的灰度信息转化为与实际物体表面反射率相对应的数值。
+
+![image](https://github.com/Open3DV/Xema/assets/117330523/17b64cae-aea0-4312-853d-3c5e9ceeb65e)
+
+
+应用步骤：首先放置标定板，点击基准平面校正按钮，以标定板的平面为基准平面。如上图所示。
+
+![image](https://github.com/Open3DV/Xema/assets/117330523/8b8ed1a2-51d7-41fc-9a17-61af5d17e27a)
+
+如最大高度最小高度章节介绍，将最大高度调为1，最小高度调为-1，只显示标定板部分，如上图所示。
+
+![image](https://github.com/Open3DV/Xema/assets/117330523/ec262ed7-014d-40ae-9411-ae5e7513702c)
+
+
+在不打开相位校正时，标定板如上图所示，在实际的标定板中整个是平面，圆和非圆部分不存在上下起伏，但实际拍出的效果则是圆有起伏。
+
+![image](https://github.com/Open3DV/Xema/assets/117330523/b27d1f7a-0dbb-4029-8331-79fd65a8173e)
+
+在打开相位校正后，发现标定板基本不存在颜色差异或差异不明显，说明校正成功。
+
 ### 19、关于
+
+![image](https://github.com/Open3DV/Xema/assets/117330523/341f8210-a7a1-4ce7-9eea-eb686f315f43)
+
+在帮助下的关于中，存在相机的基本参数信息。
+
+![image](https://github.com/Open3DV/Xema/assets/117330523/dad6041a-b91a-4e5a-a494-0404d1f78422)
 
 ### 20、固件升级
 
+![image](https://github.com/Open3DV/Xema/assets/117330523/86953a2f-2739-4572-a0a2-49f28d58ddfa)
+
+由于产品的更新迭代，导致相机所用固件版本低下，一些新功能无法使用，可通过此方法进行相机的升级，在帮助中，点击固件升级，选择文件，文件通常放在生成的GUI下的update_firmware中，名字叫：camera_server。选择此文件，点击升级即可。注意：在点击升级后，需断电重启相机，方可升级成功。
+
+![image](https://github.com/Open3DV/Xema/assets/117330523/e517cf53-6bee-41a9-b7d5-796d015fd418)
+
+![image](https://github.com/Open3DV/Xema/assets/117330523/545b1bb1-9070-49b5-83dc-8964c2b9cfb7)
+
+![image](https://github.com/Open3DV/Xema/assets/117330523/7f3fdb3e-e7dd-4469-9bba-2f4165ecff44)
+
 ### 21、标定参数
 
+![image](https://github.com/Open3DV/Xema/assets/117330523/aa3a21e7-b0fd-4236-bbc7-a0c8550b17be)
+
+在帮助下，存在此款相机的标定参数，包括相机的内参，外参以及畸变系数。
+
+![image](https://github.com/Open3DV/Xema/assets/117330523/ab369fde-a21d-4d4d-a929-301f6edb6fc6)
+
 ### 22、加载相机参数、保存相机参数
+
+![image](https://github.com/Open3DV/Xema/assets/117330523/a98f01e2-b2fe-4c9d-9e88-4a9043bf68ac)
 
 ### 23、图标
 
