@@ -12,8 +12,6 @@
 
 ![image](https://user-images.githubusercontent.com/117330523/221108634-7b2fc049-e4ee-4021-8157-1944ae464573.png)
 
-![image](https://user-images.githubusercontent.com/117330523/221108658-a4abc334-195b-432e-bc82-19660c50cd04.png)
-
 
 ## 三、性能描述
 
@@ -52,9 +50,6 @@ GPU | 128-core Maxwell GPU
 
 
 当网络中不存在DHCP服务器时（即相机与电脑直连），相机的DHCP机制尝试30秒仍没有获取到IP，即转为AVAHI机制协商IP，协商出的IP在169.254.x.x网段，可通过SDK软件包中的configuring_network_gui.exe查看IP地址，具体说明将在下一节介绍。
-
-![image](https://user-images.githubusercontent.com/117330523/221109126-f6d25257-64c9-4784-9b2a-cad22af45ea6.png)
-
 
 相机上电前，首先确认电源线与网线连接牢靠，接通电源后“Power”指示灯常亮，约30秒钟相机启动完成，此时相机的网口绿色指示灯常亮、橙色指示灯闪烁，表明网络带宽为千兆。相机的“Act”工作指示灯在拍照及数据传输时点亮，平时为熄灭状态。
 
@@ -373,13 +368,14 @@ GPU | 128-core Maxwell GPU
 
 ### 22、加载相机参数、保存相机参数
 
-![image](https://github.com/Open3DV/Xema/assets/117330523/a98f01e2-b2fe-4c9d-9e88-4a9043bf68ac)
+![image](https://github.com/Open3DV/Xema/assets/117330523/f6830a56-09c6-4f4a-9fa6-4bfcb2c982cd)
+
+在文件下，存在加载相机配置和保存相机配置选项，当我们需要记录下此次拍摄的数据时，我们就可以将配置保存在你想要的文件夹下，当我们下次拍摄时需要用到和上次一样的配置，就可以使用加载相机配置，找到你上次保存的配置进行使用。
+
+![image](https://github.com/Open3DV/Xema/assets/117330523/ad2906bb-cf54-4dd2-a93c-19f3bb94e25b)
 
 ### 23、图标
 
-### 24、图标
-
- 
 ![image](https://user-images.githubusercontent.com/117330523/221116979-de9bdd42-f464-466a-9e52-907b32b619b4.png)
 
 ![image](https://user-images.githubusercontent.com/117330523/221117096-beb13d9b-0968-4fab-9fe1-8314288336f4.png)
