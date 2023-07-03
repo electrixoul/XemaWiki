@@ -1,4 +1,4 @@
-# DexSense Xema北极鸥系列 高精度3D工业智能相机
+# DexSense 高精度3D工业智能相机
 
 ![相机_画板 1](https://user-images.githubusercontent.com/117330523/229683541-c8969d88-0ce7-4fdb-8c52-0d45c751c3e4.png)
 ![优势_画板 1](https://github.com/Open3DV/Xema/assets/117330523/a937383d-cd70-4c5c-8901-898e8852e56a)
