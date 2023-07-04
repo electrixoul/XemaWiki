@@ -4,8 +4,6 @@ If you have questions about the product, please read the following documentation
 
 [BOM.csv](https://github.com/Open3DV/Xema/wiki/BOM.csv)
 
-[DFX800相机搭建指南](https://github.com/Open3DV/Xema/wiki/DFX800%E7%9B%B8%E6%9C%BA%E6%90%AD%E5%BB%BA%E6%8C%87%E5%8D%97)
-
 [XEMA系列相机搭建指南](https://github.com/Open3DV/Xema/wiki/XEMA%E7%B3%BB%E5%88%97%E7%9B%B8%E6%9C%BA%E6%90%AD%E5%BB%BA%E6%8C%87%E5%8D%97)
 
 [XEMA系列相机使用手册](https://github.com/Open3DV/Xema/wiki/XEMA%E7%B3%BB%E5%88%97%E7%9B%B8%E6%9C%BA%E4%BD%BF%E7%94%A8%E6%89%8B%E5%86%8C)
