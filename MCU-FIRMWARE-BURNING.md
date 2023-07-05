@@ -1,0 +1,9 @@
+一：下载源码：
+![图片](https://github.com/Open3DV/Xema/assets/128878475/4ddbb77c-de07-40ec-babc-89fd92c0cdf6)
+二：打开工程：
+![图片](https://github.com/Open3DV/Xema/assets/128878475/901ffa53-d44c-47c7-9e8d-83cbdec1d92e)
+三：编译：
+![图片](https://github.com/Open3DV/Xema/assets/128878475/2f2c7248-0a46-4aad-8f50-c716d8c34467)
+四：烧录：
+![图片](https://github.com/Open3DV/Xema/assets/128878475/a690c944-cb85-4075-8ff6-432e23fecac3)
+![图片](https://github.com/Open3DV/Xema/assets/128878475/c6134339-93fd-48ed-b0ca-dcaa8a77b258)
