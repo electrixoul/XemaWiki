@@ -16,7 +16,7 @@ Lumos W 跨维智能激光振镜立体相机，采用激光振镜方案，视野
 
 ## 视野图（mm）
 
-![视野图全系列_画板 1](https://github.com/Open3DV/Xema/assets/117330523/ac9b576f-3e6c-4053-81a7-24156ac3a79e)
+![img_v2_64cdffc4-4772-420f-a0a8-06e07106b92g](https://github.com/Open3DV/Xema/assets/117330523/16e0915c-5f07-4578-b197-e33d7e8c38d3)
 
 ## 规格参数
 
