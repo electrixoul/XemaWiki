@@ -16,6 +16,6 @@ If you have questions about the product, please read the following documentation
 
 [相机搭建与使用常见问题 （FAQ）](https://github.com/Open3DV/Xema/wiki/%E7%9B%B8%E6%9C%BA%E6%90%AD%E5%BB%BA%E4%B8%8E%E4%BD%BF%E7%94%A8%E5%B8%B8%E8%A7%81%E9%97%AE%E9%A2%98-%EF%BC%88FAQ%EF%BC%89)
 
-[DexSense](https://github.com/Open3DV/Xema/wiki/DexSense)
+[DexSense 高精度3D工业智能相机参数](https://github.com/Open3DV/Xema/wiki/DexSense)
 
 [DexSense Xema Series High Precision 3D Industrial Cameras parameters](https://github.com/Open3DV/Xema/wiki/DexSense-Xema-Series-High-Precision-3D-Industrial-Cameras)
