@@ -300,7 +300,7 @@ The data will be arranged in the order of H (row)/W (column)/C (channel) in the 
 
 
 
-20.	GetParamHdr
+20.GetParamHdr
 
     // Name of function:  DfGetParamHdr
 
@@ -372,32 +372,32 @@ The data will be arranged in the order of H (row)/W (column)/C (channel) in the 
 
 25.SetParamCameraExposure
 
-   // Name of function:  DfSetParamCameraExposure
+    // Name of function:  DfSetParamCameraExposure
 
-   // Funciton:  Set the camera exposure time
+    // Funciton:  Set the camera exposure time
 
-   // Input parameter:  exposure (time of the camera exposure)
+    // Input parameter:  exposure (time of the camera exposure)
 
-   // Output parameter:  None
+    // Output parameter:  None
 
-   // Return value:  type (int):  0 means the exposure parameters setting success; -1 means the exposure parameters setting failed.
+    // Return value:  type (int):  0 means the exposure parameters setting success; -1 means the exposure parameters setting failed.
 
-   DF_SDK_API int DfSetParamCameraExposure(float exposure);
+    DF_SDK_API int DfSetParamCameraExposure(float exposure);
 
 	
 26.GetParamCameraExposure
 
-   // Name of function:  DfGetParamCameraExposure
+    // Name of function:  DfGetParamCameraExposure
 
-   // Funciton:  Get the camera exposure time
+    // Funciton:  Get the camera exposure time
 
-   // Input parameter:  None
+    // Input parameter:  None
 
-   // Output parameter:  exposure (time of the camera exposure)
+    // Output parameter:  exposure (time of the camera exposure)
 
-   // Return value:  type (int):  0 means the exposure parameters acquisition success; -1 means the exposure parameters acquisition failed.
+    // Return value:  type (int):  0 means the exposure parameters acquisition success; -1 means the exposure parameters acquisition failed.
 
-   DF_SDK_API int DfGetParamCameraExposure(float& exposure);
+    DF_SDK_API int DfGetParamCameraExposure(float& exposure);
   
 27.SetParamMixedHdr
 
@@ -415,17 +415,17 @@ The data will be arranged in the order of H (row)/W (column)/C (channel) in the 
 
 28.GetParamMixedHdr
 
-   // Name of function:  DfGetParamMixedHdr
+    // Name of function:  DfGetParamMixedHdr
 
-   // Funciton:  Get the parameters for blending multiple exposures (maximum exposure number of times is 6)
+    // Funciton:  Get the parameters for blending multiple exposures (maximum exposure number of times is 6)
 
-   // Input parameter:  None
+    // Input parameter:  None
 
-   // Output parameter:  num(exposure times),  exposure_param[6] (6 exposure parameters and the first num numbers are valid) ,  led_param[6] (6 brightness parameters and the first num numbers are valid)
+    // Output parameter:  num(exposure times),  exposure_param[6] (6 exposure parameters and the first num numbers are valid) ,  led_param[6] (6 brightness parameters and the first num numbers are valid)
 
-   // Return value:  type (int):  0 means the exposure parameters acquisition success; -1 means the exposure parameters acquisition failed.
+    // Return value:  type (int):  0 means the exposure parameters acquisition success; -1 means the exposure parameters acquisition failed.
 
-   DF_SDK_API int DfGetParamMixedHdr(int& num, int exposure_param[6], int led_param[6]);
+    DF_SDK_API int DfGetParamMixedHdr(int& num, int exposure_param[6], int led_param[6]);
 
 29.SetParamCameraConfidence
 
@@ -456,19 +456,19 @@ The data will be arranged in the order of H (row)/W (column)/C (channel) in the 
     DF_SDK_API int DfGetParamCameraConfidence(float& confidence);
 
 
-31.	SetParamCameraGain
+31.SetParamCameraGain
 
-    // Name of function:  DfSetParamCameraGain
+     // Name of function:  DfSetParamCameraGain
 
-    // Funciton:  Set the gain of the camera
+     // Funciton:  Set the gain of the camera
 
-    // Input parameter:  gain (the gain of the camera)
+     // Input parameter:  gain (the gain of the camera)
 
-    // Output parameter:  None
+     // Output parameter:  None
 
-    // Return value:  type (int):  0 means the gain parameters setting success; -1 means the gain parameters setting failed.
+     // Return value:  type (int):  0 means the gain parameters setting success; -1 means the gain parameters setting failed.
 
-    DF_SDK_API int DfSetParamCameraGain(float gain);
+     DF_SDK_API int DfSetParamCameraGain(float gain);
 
 32.GetParamCameraGain
 
@@ -901,7 +901,7 @@ The data will be arranged in the order of H (row)/W (column)/C (channel) in the 
 
     DF_SDK_API int undistortDepthTransformPointcloud(float* undistort_depth_map, float* undistort_point_cloud_map);
 
-61. transformPointcloud
+61.transformPointcloud
 
     //Name of function： transformPointcloud
 
@@ -915,7 +915,7 @@ The data will be arranged in the order of H (row)/W (column)/C (channel) in the 
 
     DF_SDK_API bool transformPointcloud(float* org_point_cloud_map, float* transform_point_cloud_map, float* rotate, float* translation);
 
-62. transformPointcloudInv
+62.transformPointcloudInv
 
     //Name of function： transformPointcloudInv
 
@@ -1558,9 +1558,9 @@ struct CalibrationParam
 };
 
 
-// Structure of the basic device information
+    // Structure of the basic device information
 
-struct DeviceBaseInfo
+    struct DeviceBaseInfo
 
 {
 
