@@ -1,5 +1,7 @@
 # XEMA系列相机使用手册
-## V1.2.0
+## V1.4.0
+## Author:YaoHaihang
+## 2023.8.8
 
 ![image](https://user-images.githubusercontent.com/117330523/221107297-6b9ca693-f00b-4153-aa30-9825d570cf3b.png)
 	
