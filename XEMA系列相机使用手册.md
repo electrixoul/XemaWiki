@@ -368,11 +368,11 @@
 
 首先设置投影亮度最高1023，曝光时间最小20000，置信度为10保留深度信息，这时在亮度图中没有发现过曝现象。但是高度图标注的部分黑色区域没有显示（拍摄的猫咪耳朵位置）。
 
-![image](https://user-images.githubusercontent.com/117330523/221113181-9139c489-599f-4e0b-9ae0-f771950d061f.png)
+![image](https://github.com/Open3DV/Xema/assets/117330523/fcaad23e-7378-4807-a981-69adb2f52cfd)
 
 这时可增加重复数，增加有效信息，例如设置为6，如果亮度图此时稍暗，可适当增加曝光时间，如这里从20000增加到22000，再增加将会过曝，应注意！
 
-![image](https://user-images.githubusercontent.com/117330523/221113244-f93ec388-3046-41a1-b6c6-7fb1167fe982.png)
+![image](https://github.com/Open3DV/Xema/assets/117330523/754359af-b0ab-45d2-87d6-2bd4babb32fc)
 
 最终效果如图：
 
@@ -384,13 +384,13 @@
 
 首先将投影亮度设置最大1023，曝光时间设置为35000，如果画面不够亮，也可在不过曝的情况下，增加曝光时间。如图所示
 
-![image](https://user-images.githubusercontent.com/117330523/221113319-f167e1a7-80fd-4a69-ba8f-b3d4d4b6872a.png)
+![image](https://github.com/Open3DV/Xema/assets/117330523/7b811cb7-1f02-4a3b-8bc9-76d186635a90)
 
-![image](https://user-images.githubusercontent.com/117330523/221113341-516632b4-568b-4d69-8666-46ff772baa78.png)
+![image](https://github.com/Open3DV/Xema/assets/117330523/4d14f7c8-3732-4c67-b93d-823d14b0019e)
 
 但发现在高度图中海绵有很多的随机噪声，这时我们提高重复数为5，目的是提高信噪比，这样随机噪声将会被抑制，增加了有效信息。如图所示：
 
-![image](https://user-images.githubusercontent.com/117330523/221113393-5d4c95b9-8f2e-4406-8704-4bfd90b281b8.png)
+![image](https://github.com/Open3DV/Xema/assets/117330523/423cdb19-a934-43c3-b2f9-b26b65c6f7bc)
 
 最后点云效果：
 
@@ -413,20 +413,20 @@
 
 第一步：首先将投影亮度设置为最大1023，将曝光时间设置为30000，目的是能够得到最暗处的深度信息，（置信度为5，噪点过滤为50），这可作为一组高动态下的曝光数据，不打开高动态情况下在高度图中，如图所示，我们可以看到最外层黑色版的深度信息。
 
-![image](https://user-images.githubusercontent.com/117330523/221113541-df04aea8-786d-443f-9364-729ac0bd22dc.png)
+![image](https://github.com/Open3DV/Xema/assets/117330523/945a84d4-7c9e-4412-bafa-b4a015888fe6)
 
 第二步：我们要得到最亮处的深度信息，将第一步中工件缺失部分（最亮）的深度信息显示出来。如降低投影亮度为1023，曝光时间为1700，（置信度为5，噪点过滤为50），这可作为一组高动态下的曝光数据，不打开高动态情况下在高度图中，如图所示，可见之前工件缺失（最亮部分）的信息成功显现。
 
-![image](https://user-images.githubusercontent.com/117330523/221113582-9d809b66-f600-40d8-9671-c7aedb22ed06.png)
+![image](https://github.com/Open3DV/Xema/assets/117330523/415d77fa-c0b3-47ef-8559-995909c24f2e)
 
 第三步：投影亮度设置个第一步和第二步的中间值为800，曝光时间为25000，（置信度为5，噪点过滤为50）可作为一组高动态下的曝光数据，不打开高动态情况下在高度图中，如图所示。
 
-![image](https://user-images.githubusercontent.com/117330523/221113608-5550c352-4eaf-42b3-b6ca-4ac02942a3f8.png)
+![image](https://github.com/Open3DV/Xema/assets/117330523/abea4f53-9160-459a-857d-5c7e97d8c0b5)
 
 第四步:开启高动态，曝光数设置为3，第一组数据：1700，1023；第二组数据：30000,1023；第三组数据：25000，800。置信度5，噪点过滤50
 
 
-![image](https://user-images.githubusercontent.com/117330523/221113633-b50d77bf-358c-4a20-a043-ad85adc46cc3.png)
+![image](https://github.com/Open3DV/Xema/assets/117330523/de30ec8e-9891-4c4e-89b6-ec7f5241c059)
 
 如图所示可得到清晰完整的一幅点云图片，无缺失。
 
