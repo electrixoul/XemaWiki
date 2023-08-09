@@ -353,7 +353,7 @@
 
 ### 24、图标
 
-![image](https://github.com/Open3DV/Xema/assets/117330523/197eeff4-5148-41f5-9eb9-45475c8a11fd)
+![image](https://github.com/Open3DV/Xema/assets/117330523/fd41f07a-d693-4b23-abc6-bf3cb301d585)
 
 
 ## 六、典型实例介绍：
