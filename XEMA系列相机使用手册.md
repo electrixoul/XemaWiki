@@ -2,8 +2,6 @@
 ## V1.4.0
 ## Author:YaoHaihang
 ## 2023.8.8
-
-![image](https://user-images.githubusercontent.com/117330523/221107297-6b9ca693-f00b-4153-aa30-9825d570cf3b.png)
 	
 
 ##  一、产品简介
@@ -14,31 +12,21 @@
 
 ![image](https://user-images.githubusercontent.com/117330523/221108634-7b2fc049-e4ee-4021-8157-1944ae464573.png)
 
+![image](https://github.com/Open3DV/Xema/assets/117330523/73d2f283-7c49-422c-a61f-8d255ca66244)
 
-## 三、性能描述
+![image](https://github.com/Open3DV/Xema/assets/117330523/040b83aa-255c-4490-a80c-55e2c87ff8d7)
 
-参数 | 值
--- | --
-标定精度 | 0.05mm
-点云分辨率 | 1920x1200
-图像分辨率 | 1920x1200
-帧率 | 1fps
-基线长度 | 150mm
-工作距离 | 400 ~ 2000mm
-数据接口 | Ethernet
-水平视角 | 40°
-垂直视角 | 23°
-外观尺寸 | 207 x 128 x 50.5 mm
-重量 | 1000g
-CPU | Quad-core Arm A57 processor @ 1.43 GHz
-GPU | 128-core Maxwell GPU
-内存 | 4GB 64-bit LPDDR4
+
+
+## 三、参数
+
+![image](https://github.com/Open3DV/Xema/assets/117330523/89b375f1-5664-441b-9d75-58fe51d0a31d)
 
 ## 四、产品安装说明
 
 ### 1. 产品配件
 
-![屏幕截图 2023-03-30 114801](https://user-images.githubusercontent.com/117330523/228760712-1856d8fc-375a-4a92-80ef-863a56863288.png)
+![image](https://github.com/Open3DV/Xema/assets/117330523/5e77ed95-7025-4220-89d1-c8a9b35383a6)
 
 
 ### 2. 硬件连接
@@ -60,83 +48,57 @@ GPU | 128-core Maxwell GPU
 1)ConfiguringIP界面介绍
 打开configuring_network_gui.exe，点击搜索相机，显示界面如下图所示：
 
-![image](https://user-images.githubusercontent.com/117330523/229753038-e7fe90a3-325b-48ad-8aea-c2576949f7e9.png)
+![image](https://github.com/Open3DV/Xema/assets/117330523/f22e6b80-0ee5-4b4d-b240-b7f2038dd31e)
 
 搜索到的相机会列表显示，左列为该相机的MAC地址，右列即为相机IP，前面讲到的相机与电脑直连时，开机后搜索到的协商IP地址类似下图。
 
-![image](https://user-images.githubusercontent.com/117330523/229753101-f130fd99-bcbf-4864-a694-81bd81c499cc.png)
+![image](https://github.com/Open3DV/Xema/assets/117330523/4c703ecc-ffc1-444d-a709-b00d69ae03e2)
 
 
 2)OpenCam3D界面介绍
 
-![image](https://user-images.githubusercontent.com/117330523/221110851-0465e352-1b44-47eb-9c08-7f97aa1ea58f.png)
+![image](https://github.com/Open3DV/Xema/assets/117330523/89038634-c69e-4b9a-ae06-c5dc67dc55b0)
 
 打开界面后，输入上一节搜索到的IP地址，将其填入红色地址栏内，并点击地址栏上方的连接按钮，连接相机以便进行后续操作，如果连接成功，界面左下方的信息栏会提示连接成功。
 
-![image](https://user-images.githubusercontent.com/117330523/221110898-632ffd55-d675-4522-9dc3-5d3ab25fab53.png)
+![image](https://github.com/Open3DV/Xema/assets/117330523/edd8ceff-4612-49c7-a304-4f5a225d20bb)
 
 点击红色框内的拍照图标，相机拍摄并在右侧显示所拍图像，可以选择显示框右上方的亮度图/深度图/高度图分别查看。为得到最佳有效的图像数据，投影亮度和曝光时间可在左侧的设置栏修改。点击拍照右侧的保存按钮，可以将拍摄的亮度图、点云图等保存至电脑，也可以勾选自动保存，拍摄后自动存储图片。
 除以上设置，界面还提供了增益、置信度、平滑、重复拍摄次数等参数供配置使用。
 
 ## 五、使用说明
 
-### 1、高动态（HDR）
-（可设置曝光数量）
+### 1、高动态（HDR：范围：2~6 ）
 
-![image](https://user-images.githubusercontent.com/117330523/221115500-54bb8ce3-690d-452a-bfb4-089df6966d5d.png)
+高动态范围成像（英语：High Dynamic Range Imaging，[简称](https://baike.baidu.com/item/%E7%AE%80%E7%A7%B0/10492947?fromModule=lemma_inlink)HDRI或HDR），来实现比普通数位图像技术更大曝光[动态范围](https://baike.baidu.com/item/%E5%8A%A8%E6%80%81%E8%8C%83%E5%9B%B4/6327032?fromModule=lemma_inlink)（即更大的明暗差别）的一组技术。
 
-高动态范围成像（英语：High Dynamic Range Imaging，[简称](https://baike.baidu.com/item/%E7%AE%80%E7%A7%B0/10492947?fromModule=lemma_inlink)HDRI或HDR），用来实现比普通数位图像技术更大曝光[动态范围](https://baike.baidu.com/item/%E5%8A%A8%E6%80%81%E8%8C%83%E5%9B%B4/6327032?fromModule=lemma_inlink)（即更大的明暗差别）的一组技术。
+效果：高动态会使图片层次更分明，明暗差别明显（特别是面对反光工件）。
 
-效果：高动态会使图片层次更分明，明暗差别明显。
+使用方法：使用高动态时，可根据具体的场景和工件，选择需要的组数，范围2-6，曝光时间和投影亮度为一组；设置合适的曝光时间和投影亮度值对物体进行多次曝光来达到最佳的拍摄效果。
 
-使用方法：使用高动态时，可设置曝光的数量，对物体进行多次曝光。
+![image](https://github.com/Open3DV/Xema/assets/117330523/3c01c780-d533-45f6-8513-9becca65e121)
 
-曝光数量 
- 
-![image](https://user-images.githubusercontent.com/117330523/221111092-e4a972e2-d01b-4997-958e-ae2e4db86974.png)
+注意：默认高动态组数是 2 组，建议在满足点云质量的情况下使用更少的组数。 
 
-范围：1-6 
-
-曝光数量：曝光的次数，配合高动态使用。当高动态打开时，可选择高动态模式下需要曝光的次数，范围1-6，需要高动态模式时，请观察图片选择曝光次数。高动态模式下，曝光时间和投影亮度为一组
-
-注意：默认高动态组数是2组，建议在满足点云质量的情况下使用更少的组数。在典型实例3中，将会介绍高动态的具体使用方法。
-
-组数（数据可修改）：
-
-当组数为1，曝光参数（曝光时间）为6000，亮度参数（投影亮度）为1023；
-
-当组数为2，曝光参数（曝光时间）为12000，亮度参数（投影亮度）为1023；
-
-当组数为3，曝光参数（曝光时间）为24000，亮度参数（投影亮度）为1023；
-
-当组数为4，曝光参数（曝光时间）为36000，亮度参数（投影亮度）为1023；
-
-当组数为5，曝光参数（曝光时间）为48000，亮度参数（投影亮度）为1023；
-
-当组数为6，曝光参数（曝光时间）为60000，亮度参数（投影亮度）为1023；
-
-![image](https://user-images.githubusercontent.com/117330523/221111215-ca8f14a2-94cb-4f51-b0f7-3c2c58888ae4.png)
-
-![image](https://user-images.githubusercontent.com/117330523/221111252-e68c3313-d7e2-4b52-828b-17f1129bef54.png)
-
+在典型实例 3 中，将会介绍高动态的具体使用方法。
 
 ### 2、相机曝光时间
 
-![image](https://user-images.githubusercontent.com/117330523/221111293-ae85bbfd-2588-476c-893e-2f5be2a29d4e.png)
+![image](https://github.com/Open3DV/Xema/assets/117330523/e40726ee-840a-43f1-84f6-424d55c21638)
 
 范围：1700-100000
 
 相机曝光时间：曝光时间是景物的反射光线通过镜头到达成像感光材料上，快门所要打开的时间。简单解释就是在相机的快门打开的时候光线进入相机的时间。
 曝光时间越长，进入的光线越多。曝光时间过长则会出现过曝的现象。对于过曝的查看：打开过曝显示开关，亮度图中显示红色的部分为过曝区域。
 
-![image](https://user-images.githubusercontent.com/117330523/221111331-19c6fa0d-5f13-42a5-a99a-2568e96c2b7c.png)
+![image](https://github.com/Open3DV/Xema/assets/117330523/6149f9e3-e79c-451e-8e27-c8fd1d6b6915)
 
-![image](https://user-images.githubusercontent.com/117330523/221111354-371b73e7-2b2f-4b73-a48c-b06d6b189ad5.png)
+![image](https://github.com/Open3DV/Xema/assets/117330523/974e40fe-6dcc-4d5f-9c98-01d0513af4df)
 
 
 ### 3、投影亮度
 
-![image](https://user-images.githubusercontent.com/117330523/221111387-d675c896-8c9d-4390-8998-2986a7a92f02.png)
+![image](https://github.com/Open3DV/Xema/assets/117330523/78d36ccf-1af0-4eb9-a3bd-cd3f4e0afea6)
 
 范围：0-1023
 
@@ -144,32 +106,31 @@ GPU | 128-core Maxwell GPU
 
 投影亮度：投影亮度就是指投影光线的强度，光线强度越大，图像就越明亮、越清晰，在一定范围内，人眼会因为亮度大而觉得画面更清晰，如果超过这个限度，过强的亮度则会导致无法看清图像。
 
-![image](https://user-images.githubusercontent.com/117330523/221111559-5f974ef2-08fa-4acf-a64d-1d79209cb4bd.png)
+![image](https://github.com/Open3DV/Xema/assets/117330523/8af795c5-7dc8-4579-a0e3-fdef4ea6a16b)
 
-![image](https://user-images.githubusercontent.com/117330523/221111653-2bdda4e1-88c7-43f2-aec0-b618a3e874db.png)
+![image](https://github.com/Open3DV/Xema/assets/117330523/6494d0eb-96a9-44d8-bde2-67facc5ba774)
 
 
 ### 4、过曝显示
 
 在进行拍摄时，难免会出现过曝的现象，在亮度图中，勾选过曝按钮就可观察过曝的区域，这样就可以改变相关的参数，如曝光时间、亮度、HDR模式等操作进行矫正。
 
-![image](https://user-images.githubusercontent.com/117330523/221111816-fd01d796-628d-46c5-a8f9-214c8b4bba22.png)
+![image](https://github.com/Open3DV/Xema/assets/117330523/c8a2349a-4d2a-4c5d-acdd-d46d43c91e2b)
 
-![image](https://user-images.githubusercontent.com/117330523/221111866-0ed8a324-1ec9-4451-bd45-688d976bbb20.png)
+![image](https://github.com/Open3DV/Xema/assets/117330523/59e3a275-2462-4feb-826d-185cbb430a4f)
 
 ### 5、置信度
 
-![image](https://user-images.githubusercontent.com/117330523/221111992-cfeb83e0-b40f-47be-97c6-9aedf895f803.png)
+![image](https://github.com/Open3DV/Xema/assets/117330523/87b88407-79f9-4c6f-ad71-3792ef052acd)
 
 范围：0-100
 
-置信度调低之后，黑色部分的深度信息（深度图）会被保留；
+置信度调低之后，黑色部分的深度信息（深度图）会被保留；相反，置信度调高之后黑色噪声会被去除。
 
-![image](https://user-images.githubusercontent.com/117330523/221112056-307a6334-d371-4c35-b35a-91bc5be9c9d5.png)
+![image](https://github.com/Open3DV/Xema/assets/117330523/16de7081-86d6-49f1-9a97-99ae9d3b9436)
 
-相反，置信度调高之后黑色噪声会被去除。
 
-![image](https://user-images.githubusercontent.com/117330523/221112100-0fc87765-55f5-4a84-86f7-0da815ad85a4.png)
+![image](https://github.com/Open3DV/Xema/assets/117330523/f6a9c9df-24ce-4ee2-be84-21f39241d47c)
 
 
 ### 6、噪点过滤
@@ -180,24 +141,25 @@ GPU | 128-core Maxwell GPU
 
 在机器视觉应用场景中,如检测金属、铝箔表面、反光膜片、光滑表面的物品时,镜面反射会造成局部反射光过强,从而失去物体原有信息,干扰机器视觉检测。噪点过滤可将产生的噪声部分消除，保存物体原有信息。
 
-![image](https://user-images.githubusercontent.com/117330523/221112212-2cd23513-6351-47bf-af97-4ee7fcf174f0.png)
+![image](https://github.com/Open3DV/Xema/assets/117330523/193dd91f-41a6-4060-aa0b-be88846f44c0)
 
-![image](https://user-images.githubusercontent.com/117330523/221112227-c900367b-f2ab-4b55-bad7-7f9242179729.png)
+![image](https://github.com/Open3DV/Xema/assets/117330523/2615db7f-c65e-4633-9dd5-16b97ceba0bf)
 
 
 
 ### 7、生成亮度图
 
-生成亮度图在界面最底端。
+将界面功能滑动条滑到最低端，找到生成亮度图功能区域。
 
-有三种模式：默认、自定义发光、自定义不发光。
-一般是默认模式。
+有三种模式：默认、自定义发光、自定义不发光。一般是默认模式。
 
-自定义发光则可以自行设置曝光时间。
+自定义发光则可以自行设置曝光时间、增益，拍摄方式（单曝光或高动态）。
 
-自定义不发光则是环境中的光线亮度。
+自定义不发光则是环境中的光线亮度，也可自行设置曝光时间、增益，拍摄方式（单曝光或高动态）。
 
-![image](https://user-images.githubusercontent.com/117330523/221112298-2375dfa3-f85d-49ce-abd6-d80778ef3599.png)
+![image](https://github.com/Open3DV/Xema/assets/117330523/6363aa06-8351-4402-afb7-10bbfbb046b8)
+
+![image](https://github.com/Open3DV/Xema/assets/117330523/6ded1d5e-bd34-4cfe-862e-bd516f4e3e4f)
 
  
 ### 8、基准平面参数
@@ -212,7 +174,7 @@ GPU | 128-core Maxwell GPU
 
 ![image](https://user-images.githubusercontent.com/117330523/221116271-22d8ab52-2a8c-4c2f-b078-194419fee0af.png)
 
-![image](https://user-images.githubusercontent.com/117330523/221112399-cd821277-a0f6-4a9e-ad0b-2a2871914969.png)
+![image](https://github.com/Open3DV/Xema/assets/117330523/d3eb2e8a-b152-42d8-a705-ad2fde985233)
 
 ![image](https://user-images.githubusercontent.com/117330523/221112432-099f0455-c197-40fd-84e5-8467035299dd.png)
 
@@ -240,7 +202,7 @@ GPU | 128-core Maxwell GPU
 
 如：只想显示选择的金属工件，则只需要将最大高度设置为0mm以下，如本次设置-1mm（紧贴基准平面），最小高度要等于或超过工件的长度，如本次设置-600mm。效果则是将工件以外的场景全部不显示，只保留工件的高度图。如图：
 
-![image](https://user-images.githubusercontent.com/117330523/221112571-4d0e8f4f-632e-47a5-b990-af3577971942.png)
+![image](https://github.com/Open3DV/Xema/assets/117330523/3c137689-e1e4-4620-9868-2c14a613b52d)
 
 
 ### 10、增益  
@@ -254,9 +216,9 @@ GPU | 128-core Maxwell GPU
 
 ### 11、半径滤波
 
-![image](https://user-images.githubusercontent.com/117330523/221112626-2c944e13-15ae-4d17-9f57-23ff9f7c92ef.png)
+![image](https://github.com/Open3DV/Xema/assets/117330523/cf249702-99ee-4afe-9502-bfffe9c0c0cf)
 
-![image](https://user-images.githubusercontent.com/117330523/221112644-5448cfea-3a55-4cd1-aa59-93adf124e25d.png)
+![image](https://github.com/Open3DV/Xema/assets/117330523/aa8f78b5-37b8-4438-b0d9-06d1c1d3e1bf)
 
 
 
@@ -268,7 +230,7 @@ GPU | 128-core Maxwell GPU
 
 ### 12、深度滤波
 
-![image](https://user-images.githubusercontent.com/117330523/229754159-95ec2ef3-9a01-4c14-877f-ca811c16a86f.png)
+![image](https://github.com/Open3DV/Xema/assets/117330523/907677d0-3315-4816-b306-e30bccd659cf)
 
 基于深度图的滤波方法，勾选为真作用否则禁用，在1000mm的距离下建议阈值为33。
 
@@ -276,9 +238,9 @@ GPU | 128-core Maxwell GPU
 
 型号选择：4mm/12mm/20mm/40mm/80mm
 
-![image](https://user-images.githubusercontent.com/117330523/221112706-59f7e9e0-037e-4a97-b2e0-59413d32e605.png)
+![image](https://github.com/Open3DV/Xema/assets/117330523/398e2e7e-d801-4bec-b229-716d3750bfff)
 
-![image](https://user-images.githubusercontent.com/117330523/221112727-3c62f155-847e-4ed2-a2c6-6a8d08d7df18.png)
+![image](https://github.com/Open3DV/Xema/assets/117330523/bfcdb437-c8bc-45c3-b27b-a514bb97b81b)
 
 
 ### 14、相机IP地址：***.***.***.***
@@ -296,7 +258,7 @@ GPU | 128-core Maxwell GPU
 
 ### 16、保存
 
-![image](https://user-images.githubusercontent.com/117330523/229754503-74f46496-6fec-4efa-b3b8-38c0e68e974c.png)
+![image](https://github.com/Open3DV/Xema/assets/117330523/512cd270-91e1-4b51-a348-624be0d9ca7c)ng)
 
 点击保存按钮，可选择原图或去畸变进行保存，也可选择不再提示。
 
@@ -304,7 +266,7 @@ GPU | 128-core Maxwell GPU
 
 ![image](https://github.com/Open3DV/Xema/assets/117330523/2a5967aa-5c23-40a6-b810-d976eb77c003)
 
-在引擎中我们可以选择不同的引擎模式，包括常规模式和高反模式。高反模式则是应对高反光工件的特殊引擎，例如一个高反光工件在用常规模式的高动态时，效果依然不理想，这时便可使用高反模式，以下是一个拍摄高反光工件的例子。
+在引擎中我们可以选择不同的引擎模式，包括常规模式和高反模式。高反模式则是应对高反光工件的特殊引擎，例如一个高反光工件在用常规模式的高动态时，效果依然不理想，这时便可使用高反模式，以下是一个拍摄高反光工件的例子。(对于旧相机，可能需要重新烧录条纹才支持高反模式）
 
 ![image](https://github.com/Open3DV/Xema/assets/117330523/66bc2e8f-7427-4c37-8c63-226439f48e37)
 
@@ -322,21 +284,21 @@ GPU | 128-core Maxwell GPU
 
 相位校正即点云灰度补偿，是一种在三维点云数据中对灰度信息进行校正的方法。 点云灰度补偿的目的是消除这些灰度值差异，并将点云中的灰度信息转化为与实际物体表面反射率相对应的数值。
 
-![image](https://github.com/Open3DV/Xema/assets/117330523/17b64cae-aea0-4312-853d-3c5e9ceeb65e)
+![image](https://github.com/Open3DV/Xema/assets/117330523/b7a9ff32-d14e-4e49-bc0a-c50d440a01de)
 
 
 应用步骤：首先放置标定板，点击基准平面校正按钮，以标定板的平面为基准平面。如上图所示。
 
-![image](https://github.com/Open3DV/Xema/assets/117330523/8b8ed1a2-51d7-41fc-9a17-61af5d17e27a)
+![image](https://github.com/Open3DV/Xema/assets/117330523/0d0c9e1c-59ce-40cb-b5cc-dadc5db79c18)
 
 如最大高度最小高度章节介绍，将最大高度调为1，最小高度调为-1，只显示标定板部分，如上图所示。
 
-![image](https://github.com/Open3DV/Xema/assets/117330523/ec262ed7-014d-40ae-9411-ae5e7513702c)
+![image](https://github.com/Open3DV/Xema/assets/117330523/e5697c86-caf2-474d-aac0-99e179be251f)
 
 
 在不打开相位校正时，标定板如上图所示，在实际的标定板中整个是平面，圆和非圆部分不存在上下起伏，但实际拍出的效果则是圆有起伏。
 
-![image](https://github.com/Open3DV/Xema/assets/117330523/b27d1f7a-0dbb-4029-8331-79fd65a8173e)
+![image](https://github.com/Open3DV/Xema/assets/117330523/d1196d44-450b-4023-89d7-6bcd0ad65d20)
 
 在打开相位校正后，发现标定板基本不存在颜色差异或差异不明显，说明校正成功。
 
@@ -376,11 +338,22 @@ GPU | 128-core Maxwell GPU
 
 ![image](https://github.com/Open3DV/Xema/assets/117330523/ad2906bb-cf54-4dd2-a93c-19f3bb94e25b)
 
-### 23、图标
+### 23、语言
 
-![image](https://user-images.githubusercontent.com/117330523/221116979-de9bdd42-f464-466a-9e52-907b32b619b4.png)
+![image](https://github.com/Open3DV/Xema/assets/117330523/09edab48-2291-4449-a4cd-c49997747fa6)
 
-![image](https://user-images.githubusercontent.com/117330523/221117096-beb13d9b-0968-4fab-9fe1-8314288336f4.png)
+![image](https://github.com/Open3DV/Xema/assets/117330523/307a5dc1-f78d-4976-abb3-631dae256b35)
+
+
+用户可选择界面进行中英文切换。
+
+![image](https://github.com/Open3DV/Xema/assets/117330523/295604d5-e38a-44df-9526-100581ae7b32)
+
+注意：自行编译的上位机GUI，需要将图中路径的两个翻译文件放入\xema\x64\Release路径下，这样打开GUI才能正常切换语言。
+
+### 24、图标
+
+![image](https://github.com/Open3DV/Xema/assets/117330523/197eeff4-5148-41f5-9eb9-45475c8a11fd)
 
 
 ## 六、典型实例介绍：
