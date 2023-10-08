@@ -1,6 +1,6 @@
 # XEMA系列相机搭建指南
 
-## V0.7
+## V1.4.0
 
 ![image](https://user-images.githubusercontent.com/117330523/221456893-7206fbbc-9517-417c-a3ba-2378f17d7cf4.png)
 
