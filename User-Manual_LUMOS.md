@@ -168,3 +168,57 @@ Author:YaoHaihang&Caoyinyao
 ### 1、普通物体
 
 在拍摄普通物体时，在不过曝的情况下，我们要尽量增加投影亮度和曝光时间，此时的拍摄效果将会达到最佳，具体参数值可根据现场调整。
+
+![image](https://github.com/Open3DV/Xema/assets/117330523/ee734c57-e147-46ca-aa3a-1894c55a13d1)
+
+![image](https://github.com/Open3DV/Xema/assets/117330523/9971b34e-6515-4ea2-846f-d946e939c0d8)
+
+最终点云效果如图：
+
+![image](https://github.com/Open3DV/Xema/assets/117330523/4291df53-a9df-4831-8651-160e765f34ab)
+
+同时SDK支持拍摄彩色点云，效果如下：
+
+![image](https://github.com/Open3DV/Xema/assets/117330523/a14115c1-05cd-4bf8-b169-f8c7d18089a0)
+
+### 2、黑色物体
+
+拍摄黑色物体，如空调压缩机
+
+首先将投影亮度设置最大1023，曝光时间设置为69000，如果画面不够亮，也可在不过曝的情况下，增加曝光时间。如图所示
+
+![image](https://github.com/Open3DV/Xema/assets/117330523/b2b5a6e2-0b5c-4186-b711-9a732f34167c)
+
+![image](https://github.com/Open3DV/Xema/assets/117330523/652f6c29-be73-47a8-a4ef-b812d56c822f)
+
+提高黑色物体尽可能完整点云信息，可增加曝光时间。如图所示：
+
+![image](https://github.com/Open3DV/Xema/assets/117330523/e97bf285-ed50-4641-ba9a-c70a1b668257)
+
+最后点云效果：
+
+![image](https://github.com/Open3DV/Xema/assets/117330523/12f42806-e1d9-4494-b020-4990ed942936)
+
+### 3、金属镜面反光工件（高动态）
+
+![image](https://github.com/Open3DV/Xema/assets/117330523/70de6647-2159-46a9-af23-246d30497ed1)
+
+实际场景中，当检测金属、铝箔表面、反光膜片、光滑表面的物品时，镜面反射会造成局部反射光过强，从而失去物体原有信息，这时候可通过高动态模式尽量将物件完整信息采集出来。
+
+在实际操作环境中，根据物体的层次可选择高动态曝光数，如下实例：
+
+第一步：我们要得到最亮处的深度信息，如设置曝光时间为10000，（置信度为5，噪点过滤为50），作为一组高动态下的曝光数据，不打开高动态情况下在高度图中，如图所示：
+
+![image](https://github.com/Open3DV/Xema/assets/117330523/0b457475-436a-4ea9-9ced-f06205935c2b)
+
+第二步：曝光时间为30000，（置信度为5）可作为一组高动态下的曝光数据，不打开高动态情况下在高度图中，如图所示。
+
+![image](https://github.com/Open3DV/Xema/assets/117330523/5d0324a7-1ce2-4c16-a26a-ea4ae8b6968b)
+
+第三步：开启高动态，曝光数设置为2，第一组数据：10000，1023；第二组数据：50000，1023。置信度5，如下图：
+
+![image](https://github.com/Open3DV/Xema/assets/117330523/7e01dccd-0fea-43fc-a0ca-dbed5ec11649)
+
+如图所示可得到清晰完整的一幅点云图片，无缺失。
+
+![image](https://github.com/Open3DV/Xema/assets/117330523/62fb7794-c5e6-41d5-aeae-166a499f3d26)
