@@ -8,6 +8,8 @@ If you have questions about the product, please read the following documentation
 
 [XEMA系列相机使用手册](https://github.com/Open3DV/Xema/wiki/User-Manual_XEMA)
 
+[LUMOUS系列相机使用手册](https://github.com/Open3DV/Xema/wiki/User-Manual_XEMA)
+
 [Operating Instructions of XEMA](https://github.com/Open3DV/Xema/wiki/Operating-Instructions-of-XEMA)
 
 [XEMA系列相机接口文档](https://github.com/Open3DV/Xema/wiki/SDK)
