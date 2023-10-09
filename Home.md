@@ -10,7 +10,7 @@ If you have questions about the product, please read the following documentation
 
 [Operating Instructions of XEMA](https://github.com/Open3DV/Xema/wiki/Operating-Instructions-of-XEMA)
 
-[XEMA系列相机接口文档](https://github.com/Open3DV/Xema/wiki/XEMA%E7%B3%BB%E5%88%97%E7%9B%B8%E6%9C%BA%E6%8E%A5%E5%8F%A3%E6%96%87%E6%A1%A3)
+[XEMA系列相机接口文档](https://github.com/Open3DV/Xema/wiki/SDK)
 
 [Interface Document of XEMA](https://github.com/Open3DV/Xema/wiki/Interface-Document-of-XEMA)
 
