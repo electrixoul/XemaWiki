@@ -14,7 +14,7 @@ If you have questions about the product, please read the following documentation
 
 [Interface Document of XEMA](https://github.com/Open3DV/Xema/wiki/Interface-Document-of-XEMA)
 
-[相机搭建与使用常见问题 （FAQ）](https://github.com/Open3DV/Xema/wiki/%E7%9B%B8%E6%9C%BA%E6%90%AD%E5%BB%BA%E4%B8%8E%E4%BD%BF%E7%94%A8%E5%B8%B8%E8%A7%81%E9%97%AE%E9%A2%98-%EF%BC%88FAQ%EF%BC%89)
+[相机搭建与使用常见问题 （FAQ）](https://github.com/Open3DV/Xema/wiki/FAQ)
 
 [DexSense 高精度3D工业智能相机参数](https://github.com/Open3DV/Xema/wiki/DexSense)
 
