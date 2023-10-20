@@ -38,9 +38,9 @@ Lumos W 跨维智能激光振镜立体相机，采用激光振镜方案，视野
   | 基线长度（mm） | 350 | 145 | 70 | 80| 394
   | 分辨率 | 1920×1200 |1920×1200| 2448×2048| 1920×1200| 1624×1240;4032×3040（最大）
   | 接口类型 | 千兆以太网|千兆以太网|千兆以太网|千兆以太网|千兆以太网
-  | 计算单元 | NVIDIA Jetson Nano|NVIDIA Jetson Nano|NVIDIA Jetson Nano|NVIDIA Jetson Nano|/
+  | 计算单元 | NVIDIA Jetson Nano|NVIDIA Jetson Nano|NVIDIA Jetson Nano|NVIDIA Jetson Nano|
   | 额定电压 | DC 24V 3.2A|DC 24V 3.2A|DC 24V 3.2A|DC 24V 3.2A|DC 24V,>=2A
-  ||认证|CE/FCC/RoHS|CE/FCC/RoHS|CE/FCC/RoHS|CE/FCC/RoHS|/
+  ||认证|CE/FCC/RoHS|CE/FCC/RoHS|CE/FCC/RoHS|CE/FCC/RoHS|
 
 ## 点云图
 
