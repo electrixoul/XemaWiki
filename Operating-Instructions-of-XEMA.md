@@ -6,7 +6,7 @@
 
 ## 1.Product Presentation
 
-XEMA series cameras are structured light 3D cameras based on DLP projection, which are suitable for use scenarios such as 3D scanning, industrial 3D defect detection, industrial disorderly grabbing with industrial robots, and loading and unloading. The core components include TI DLP3010 projection chip, Sony IMX174 imaging chip and Nvidia Jetson Nano computing module. The data transmission of XEMA uses the GigE interface and XEMA supports multiple exposure modes.
+XEMA series cameras are structured light 3D cameras based on DLP projection, which are suitable for use scenarios such as 3D scanning, industrial 3D defect detection, industrial disorderly grabbing with industrial robots, and loading and unloading. The core components include TI DLP3010 projection chip, Sony IMX392 imaging chip and Nvidia Jetson Nano computing module. The data transmission of XEMA uses the GigE interface and XEMA supports multiple exposure modes.
 
 ## 2.Product Display
 
