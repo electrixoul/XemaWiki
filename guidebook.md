@@ -186,50 +186,77 @@ crontab -e
 ## 四、PC客户端软件编译
 
 （PC客户端也可从网址：https://gitee.com/open3dv/xema/releases直接下载发行版安装包即可使用）
+
 Windows客户端的开发基于Microsoft Visual Studio Community 2019，可以从微软的官方网站登录下载：
+
 https://my.visualstudio.com/Downloads?q=visual%20studio%202019&wt.mc_id=o~msft~vscom~older-downloads。
+
 客户端界面使用Qt工具设计，版本为Qt5.9.3。
+
 源码下载管理工具为git，没有特别的版本要求。
+
 Windows平台下的shell运行环境，需安装Cygwin，没有特别的版本要求。
-1.Xema 编译（上位机GUI）
+
+### 1.Xema 编译（上位机GUI）
+
 PC端任意选择一个路径打开终端执行以下语句下载源代码：
+
 git clone [https://gitee.com/open3dv/xema](https://gitee.com/open3dv/xema.git) -b dev
+
 下载完成后，cd xema/进入目录，打开终端执行以下语句下载第三方库：
+
 git clone [https://gitee.com/open3dv/thirdparty](https://gitee.com/open3dv/thirdparty.git) 3rdparty
 
 双击OpenCam3D.sln打开客户端源码的VC解决方案，并进行必要的配置：
+
 编译开关设置为Release：
 
 Qt插件安装：
+
 在VS2019的菜单栏选择“扩展” —— “管理扩展”，在弹出的界面中点击左侧的“联机”，然后在右侧搜索框输入“Qt”并回车，界面中间出现“Qt Visual Studio Tools”，点击选中该条目，此时条目右上角出现“下载”按钮，点击下载开始下载和安装，安装完成后如图所示。
 
 Qt版本设置：
+
 在菜单栏点击“扩展” —— “Qt VS Tools” —— “Qt Versions”，在弹出的界面中配置Qt的编译器版本，先点击“Path”在弹出的对话框中选择Qt编译器的路径，再设置前面的“Version”，设定好之后点击“确定”。
 
 
 编译执行：
+
 在VS2019解决方案界面，右键点击“生成解决方案”开始编译；
 
 生成的文件release：
+
 VS编译完成后，在xema\x64\Release目录下，双击open_cam3d_gui.exe打开并使用xema_gui（具体软件的使用可以参考《XEMA系列相机使用手册》）
  
 
 
-2.ConfiguringIP 编译（相机搜索工具）
+### 2.ConfiguringIP 编译（相机搜索工具）
+
 下载源代码，PC任意选这个一个路径地址，打开终端执行：
+
 git clone https://gitee.com/open3dv/ConfiguringIP.git
+
 双击ConfiguringIP.sln打开进行编译，过程与xema的配置过程完全一致。
+
 生成的文件：
 
 因执行同样要依赖Qt的动态库，所以需要将xema\x64\Release中的platforms文件夹拷贝到ConfiguringIP\x64\Release中；
+
 然后双击configuring_network_gui.exe打开IP搜索配置gui；
+
 也可将configuring_ip.exe和configuring_network_gui.exe拷贝至xema编译之后的Release文件夹内，再运行操作。
-五、相机标定
-1，光机/相机调焦
+
+## 五、相机标定
+
+### 1，光机/相机调焦
+
 1)光圈设置：
+
 a)根据相机工作距离，将相机固定，准备好相应规格的标定板；打开相机的外盖，调节光圈：xema-L：F2.8，xema-S：F6.5，xema-D：F6.5，xema-P：F4.0
 （以上为官方标准光圈值，用户也可根据自身需求自定义变更）
+
 2)调焦：
+
 a)对内部的光机和相机进行调焦，使其在标定距离处对焦清晰；
 
 b)进入编译后的xema/X64/Release文件夹，终端运行./open_cam3d.exe；
@@ -239,16 +266,21 @@ c)相机投影范围内垫满白纸，终端执行如下指令对光机和相机
 d)光机调焦清晰标准：使其投影在边缘以及中心的棋盘格内部的小棋盘格清晰可见；
 
 e)相机调焦清晰标准：保证投影中心区域黑白棋盘格清晰可见情况下整体清晰度均匀
-2，采图标定
+
+### 2，采图标定
+
 标定要拍摄N组图片，使用上位机软件open_cam3d.exe拍照获取，xema/X64/Release文件夹，终端运行./open_cam3d.exe，找到采图指令（如下图红框指示）：
 
 3)将标定板放置在距离相机适当的位置（取决于工作距离），执行拍照命令，获取一组图片（IP地址需要改为标定相机的IP地址）:
+
 ./open_cam3d.exe --get-raw-02 --ip 192.168.x.x --path .\capture\00
+
 “.\capture\00”表示当前目录下capture文件夹内00组，Path对应路径可自定义更改
 
 4)在目标工作距离的约正负15%的范围内，变换标定板位姿，运行拍照命令，获取第二组图片：
 
 ./open_cam3d.exe --get-raw-02 --ip 192.168.x.x --path .\capture\01
+
 接着重复以上操作，得到至少00~24组拍摄的图片，如需要获取00-24组共25张图片，则可以分五个位置（中心和四个角共五个位置）每个位置5张不同位姿进行拍摄。
 
 
@@ -257,8 +289,12 @@ e)相机调焦清晰标准：保证投影中心区域黑白棋盘格清晰可见
 
 
 5)运行标定程序自动进行相机标定（这里需要注意标定板的规格设置），标定完成后，会在当前目录下生成标定参数文件param.txt：
+
 .\calibration.exe --calibrate --use patterns --path ./capture/ --version 3010 --board 20 --calib ./param.txt
+
 3010为光机型号，“board 20”表示标定板规则为20mm；具体根据实际情况变更即可
+
 6)运行命令将标定结果写进相机：
+
 .\open_cam3d.exe --set-calib-looktable --ip 192.168.x.x --path ./param.txt
 至此：整个标定过程完成，GUI连接相机：查询标定参数是否匹配、深度图和高度图是否正确、采图保存点云是否正常
