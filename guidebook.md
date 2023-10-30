@@ -12,48 +12,71 @@
 
 可通过相机装配的电源线连接好光机的12V电源，用USB转I2C转接线连接PC与光机，
 
+![image](https://github.com/Open3DV/Xema/assets/117330523/79f62147-8bae-4bdc-b478-452ea009d96a)
+
+
 上电后在PC端打开TI的DLP GUI软件，界面如下（新版本的GUI工具可切换光机类型，点击界面EVM Selection进入后可选择），点下右下角的Get，则右侧显示光机的型号和内部软件版本等信息。
+
+![image](https://github.com/Open3DV/Xema/assets/117330523/e36ab348-cbdd-4acc-ad24-9d2d3f8d2879)
+
 
 2)图案生成（需生成2次）
 
 ① PC需要安装python，在下载的相机软件目录下找到tools文件夹，运行create_patterns.py（适用3010光机），会在tools文件夹里创建 patterns文件夹，内中有生成的42幅条纹图案，其中垂直正弦条纹18幅、水平正弦条纹18幅、灰度图6幅。
 
+![image](https://github.com/Open3DV/Xema/assets/117330523/a87b26c4-4b36-456a-9ce6-e7b229ba0d68)
+
+![image](https://github.com/Open3DV/Xema/assets/117330523/8f2007cf-7ab3-4f16-b780-22ba21d72b4c)
 
 ② 同样在tools文件夹中，打开终端运行create_minsw_code.py（适用3010光机），会在tools文件夹里创建 patterns_minsw_code文件夹，其中有生成的10幅图案，其中竖条纹图案8幅（00-07）、纯黑图案1幅，纯白图案一幅。
+
+![image](https://github.com/Open3DV/Xema/assets/117330523/dc59e67c-2fb7-4e4e-892e-cfb0fd7881ea)
+
+![image](https://github.com/Open3DV/Xema/assets/117330523/604484b1-eb55-4067-95b1-4dd407341a9a)
 
 
 3)写入光机（patterns+patterns_minsw_code条纹均添加写入）
 
 ① 先将patterns文件夹中的42幅图片，每6个一组，分组添加到DLP软件中，注意Vertical对应竖条纹，Horizontal对应横条纹，横竖条纹都选择8-bit，具体操作如下图：
 
+![image](https://github.com/Open3DV/Xema/assets/117330523/47a1c6fe-d7f8-4c54-8ba9-3d920c1bf704)
 
+![image](https://github.com/Open3DV/Xema/assets/117330523/f3db4a4f-b960-461b-b75e-94652d848012)
 
+![image](https://github.com/Open3DV/Xema/assets/117330523/c161e9d5-6152-40df-8a65-724c2e0afe0c)
+
+![image](https://github.com/Open3DV/Xema/assets/117330523/e93b7ba6-31ce-4c1b-bf8a-c747db31fad8)
 
 后面依照这个方式将剩余的6组图片依次添加进来，注意3组之后就是横条纹，添加时注意选择是Horizontal Pattern，最后的6幅无条纹灰度图Horizontal/Vertical两种方式都可以。
 
-
 ② 再将patterns_minsw_code文件夹中的10幅图片，8个竖条纹为一组，2个黑白条纹为一组，将两组分别添加到DKP软件中，两组都选择Vertical 1-bit，具体操作如下图：
 
+![image](https://github.com/Open3DV/Xema/assets/117330523/68525fad-baf0-4381-b928-c16acec3f776)
 
+![image](https://github.com/Open3DV/Xema/assets/117330523/988abc52-b2af-48f2-9792-d213d0fac7b0)
 
+![image](https://github.com/Open3DV/Xema/assets/117330523/140284c3-f3a3-4b0b-9325-4cd8e683e926)
 
 全部添加完后，点击下一步，对于前7组配置每一组图案的曝光参数如下。
 
+![image](https://github.com/Open3DV/Xema/assets/117330523/7d665857-64d7-4228-ba46-925c2ceeeee2)
 
+![image](https://github.com/Open3DV/Xema/assets/117330523/708b2ddb-26a9-4f34-a8a0-de0407de259b)
 
 对于第8组和第9组配置每一组图案的曝光参数如下。
 
+![image](https://github.com/Open3DV/Xema/assets/117330523/811ad738-0ae9-43c7-bec1-8e1722142105)
+
+
 全部配置完后，点击Program and Load Pattern将图片和参数写入光机，完成后点击下一步可以测试。
 
+![image](https://github.com/Open3DV/Xema/assets/117330523/99b32b20-650e-4eaa-a1fd-c4d2ad600657)
 
 点击按钮Run Once，若光机投出正常条纹，说明烧图成功。
 
+![image](https://github.com/Open3DV/Xema/assets/117330523/0ec5fde3-5927-40c3-b46f-7eca5d0af564)
 
-
-
-
-
-2、Jetson Nano系统安装（DIY出货已提前烧录好，可直接跳过此步骤）
+### 2、Jetson Nano系统安装（DIY出货已提前烧录好，可直接跳过此步骤）
 
 1、配置过程：
 
@@ -61,42 +84,64 @@
 
 1）电脑主机的环境为 Ubuntu18.04，Jetson Nano 核心板安装至官方载板，用跳线帽设置载板为 RECOVERY 模式（载板J48用跳线短接），短接位置见下图红框标记位置：
 
+![image](https://github.com/Open3DV/Xema/assets/117330523/22e4b644-5d5b-43cd-89a4-bd6f3184ae3a)
+
+![image](https://github.com/Open3DV/Xema/assets/117330523/833caddd-333a-486d-8d6c-d1a56118d5e6)
+
 
 2）将Jetson Nano Module安装在官方载板上，连接5V DC电源、HDMI显示器、USB鼠标和键盘、网线、Micro-B USB线至Linux主机，并给5V电源上电，如下图：
 
+![image](https://github.com/Open3DV/Xema/assets/117330523/6ca5b8d5-e5e8-4446-966f-84be052e0d56)
+
+
 3）通过安装了SDKManager的Linux主机，安装系统至Nano Module：首先打开SDKManager，登录（Linux必须为Ubuntu18.04，高版本下SDKManager的安装过程是无法进行的）；
 
+![image](https://github.com/Open3DV/Xema/assets/117330523/0af43981-22a4-4ec7-9166-f52fe5ee5b4c)
 
 4）登录成功后，弹出提示，选择硬件，按图选择Jetson Nano，点击OK；
 
+![image](https://github.com/Open3DV/Xema/assets/117330523/15d9bbde-3eeb-41f3-8a74-c41dc0c9bd25)
+
 5）依照下图选择，将“Host Machine”的勾去掉，选择Linux JetPack 4.6[rev.3]，然后点击“CONTINUE”进入下一步；
 
+![image](https://github.com/Open3DV/Xema/assets/117330523/589945b4-faa9-43ff-9770-cac5cc484568)
 
 
 6）勾选下方的接受协议（安装内容默认），点击下一步；
 
+![image](https://github.com/Open3DV/Xema/assets/117330523/e7cdebab-fff9-4ff2-a34f-305da5a5dea3)
 
 注意：首次安装需要生成下载路径，点击“Create”。
 
-
-
+![image](https://github.com/Open3DV/Xema/assets/117330523/9ef49385-fc1b-4d83-8b40-75d6763cfa93)
 
 7）弹框提示填写用户密码，密码：dexforce，开始安装；
 
+![image](https://github.com/Open3DV/Xema/assets/117330523/8be98596-cbf1-4bf9-ba1b-8f30264a9558)
 
 2、接下来的安装过程中有一些操作需要手动设置，请严格按照以下步骤进行操作：
 
 1）下载安装一段时间后：Jetson Nano的系统下载完需要手动设置：①强制恢复模式选择手动方式；②填写用户名(dexforce)、密码(dexforce)，然后将第一步中J50的跳线帽去掉，点击“Flash”开始烧写；
 
+![image](https://github.com/Open3DV/Xema/assets/117330523/4b08df4c-3c1c-4bd7-87ba-5c87cccbce46)
+
 2）Jetson Nano的Ubuntu系统安装完后，板子也会启动，HDMI显示器会点亮，这时候需要对Nano系统进行一些必要的设置，具体设置如下：
 
 Nano系统启动后会弹出系统配置对话框，如图勾选并继续，语言和键盘均选择默认英语，地区点击地图中的位置，显示“Shanghai”并点击“Continue”，接下来用户名填写：dexforce，密码和确认密码均为：dexforce；选择：Log in automatically，继续点击“Continue”至配置完成，进入系统界面。
 
+![image](https://github.com/Open3DV/Xema/assets/117330523/af951e37-35fd-418a-bce5-97bd2800561a)
 
+![image](https://github.com/Open3DV/Xema/assets/117330523/58c265c0-6493-4735-8f45-6d509a482388)
 
+![image](https://github.com/Open3DV/Xema/assets/117330523/f58530f2-e40e-40f3-a8ba-c59e51146409)
 
+![image](https://github.com/Open3DV/Xema/assets/117330523/d8be11f5-08eb-4538-ba2b-6d7cf8bf4012)
+
+![image](https://github.com/Open3DV/Xema/assets/117330523/0d27e682-ed83-4c38-82bc-39b77ccd85d0)
 
 3）Nano系统界面设置完成后，待完全Nano重启成功，回到主机的SDKManager界面：输入用户名dexforce和密码dexforce，点击“install”继续安装
+
+![image](https://github.com/Open3DV/Xema/assets/117330523/258ef127-907a-4bf6-a980-b5a0eae177af)
 
 所有设置均完成，整个安装过程大约需1小时左右，待完成后点击“FINISH”退出即完成安装。
 
