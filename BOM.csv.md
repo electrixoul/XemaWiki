@@ -85,10 +85,10 @@ td
 1.26 |   | TX-000009 | 开关电源线 | 弯头国标3脚插座裸线1mm² 剥线5mm浸锡 3m长 | pcs | 1
 1.27 |   |   | 6P电子线 | 6piN红黑线 | pcs | 2
 1.31 |   | SJ-000003 | 导热硅胶 |   | pcs | 1
-1.33 |   |   | 导光柱 |   | pcs | 2
+1.33 |   |   | 导光柱 | [HA-3.5F](https://item.taobao.com/item.htm?spm=a1z09.2.0.0.140c2e8dJj3KZJ&id=558593940940&_u=v20ebvesot2d99)  | pcs | 2
 1.34 |   |   | 光机温控电阻线 | ZH1.5MM 间距 2pin 座子，线长10cm | pcs | 1
 2 | 主板 |   | DFX804主板部件 |   | pcs | 1
-2.1 | 外购开发板 | ZC.TP.020004 | 开发板 | 外购，jetson 900-13448-0020-000 | pcs | 1
+2.1 | 外购开发板 | ZC.TP.020004 | 开发板 | 外购，Nivdia 900-13448-0020-000 [Jetson nano module](https://developer.nvidia.com/embedded/jetson-nano) | pcs | 1
 2.2 | 自研载板 |   | DFX804 载板 | 自研，版本：Jetson_Base_V1.5 | pcs | 1
 2.2.1 |   |   | PCB | 4层板，FR4，78mm*82mm*1.6mm, 喷锡，版本：Jetson_Base_V1.5 | pcs | 1
 2.2.2 |   |   | 贴片电容 | 贴片电容 RoHS SMD 0402 10nF/50V±10% | pcs | 2
